@@ -26,7 +26,7 @@ int optimal(int a[] , int n){
 
 int brute(int a[] ,int n){
     int maxsum = INT_MIN ;
-    for(int i=0 ;i<n ;i++){    // tc o(n^2)
+    for(int i=0;i<n ;i++){    // tc o(n^2)
         int sum = 0;
         for(int j=i ;j<n ;j++){
             sum += a[j] ;
