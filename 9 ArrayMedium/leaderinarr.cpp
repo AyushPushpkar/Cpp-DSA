@@ -46,6 +46,5 @@ int main(){
     int a[n] = {10,22,12,3,0,6} ;
 
     brute(a,n) ;
-
     optimal(a,n);
 }
