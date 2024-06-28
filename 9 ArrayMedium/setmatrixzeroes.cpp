@@ -1,9 +1,53 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void optimal(vector<vector<int>>& v,int n,int m){
+    // int col[m]={0};     v[0][...]  row0
+    // int row[n]={0};     v[...][0]  col0
+    int col0 =1 ;
+
+    for (int i = 0; i < n; i++) {       //o(n*m)
+        for (int j = 0; j < m; j++) {
+            if(v[i][j] == 0){
+                //mark ith row
+                v[i][0] = 0 ;
+                //mark jth column
+                if(j != 0) v[0][j] = 0;
+                else col0 = 0 ;
+            }
+        }
+    }
+    for (int i = 1; i < n; i++) {       //o(n*m)
+        for (int j = 1; j < m; j++) {
+            if(v[i][j] != 0){
+                if(v[0][j] == 0 || v[i][0]==0){
+                    v[i][j] = 0 ;
+                }
+            }
+        }
+    }
+    if(v[0][0] == 0){
+        for(int j=1 ;j<m;j++){
+            v[0][j] = 0;
+        }
+    }
+    if(col0 == 0){
+        for(int i=0 ;i<n;i++){
+            v[i][0] = 0;
+        }
+    }
+    
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            cout << v[i][j] << " " ;
+        }
+        cout << endl ;
+    }
+}
+
 void better(vector<vector<int>>& v,int n,int m){
-    int col[m]={0};
-    int row[n]={0};
+    int col[m]={0};     //sc o(m)
+    int row[n]={0};     //sc o(n)
 
     for (int i = 0; i < n; i++) {       //o(n*m)
         for (int j = 0; j < m; j++) {
@@ -82,5 +126,7 @@ int main(){
 
     // brute(v,n,m) ;
 
-    better(v,n,m);
+    // better(v,n,m);
+
+    optimal(v,n,m);
 }
