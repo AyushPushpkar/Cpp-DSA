@@ -5,13 +5,13 @@ int optimal(int arr[] ,int m){
     if(m==0) return 0;
 
     unordered_set<int>st ;      // sc  o(n)
-    int longest =1 ;
+    int longest =1 ;            // tc  o(3*n)
     int cnt = 0 ;
     
     for(int i=0;i<m;i++){            // o(n)
-        st.insert(arr[i]);
+        st.insert(arr[i]);     //o(1)
     }
-    for(auto it : st){
+    for(auto it : st){              //o(2*n)
         if(st.find(it-1) == st.end()){
             cnt = 1 ;
             int x =it ;
