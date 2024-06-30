@@ -4,7 +4,7 @@ using namespace std;
 void optimal(vector<vector<int>>& v,int n,int m){
     // int col[m]={0};     v[0][...]  row0
     // int row[n]={0};     v[...][0]  col0
-    int col0 =1 ;
+    int col0 =1 ;            //tc o(2*n*m)
 
     for (int i = 0; i < n; i++) {       //o(n*m)
         for (int j = 0; j < m; j++) {
@@ -116,11 +116,12 @@ void brute(vector<vector<int>>& v,int n,int m){
 }
 
 int main(){
-    int n=4,m=4 ;
+    int n=5,m=4 ;
     vector<vector<int>> v ={
         {1,1,1,1},
         {1,1,0,1},
         {1,1,0,1},
+        {0,1,1,1},
         {1,1,1,1}
     };
 
