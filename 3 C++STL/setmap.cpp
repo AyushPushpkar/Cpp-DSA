@@ -61,11 +61,13 @@ void explainMap(){
 }
 
 void Multimap(){
+    multimap<int,int>mmp ;
     //duplicate keys
     //sorted
 }
 
 void Unorderedmap(){
+    unordered_map<int,int> ump;
     // o(1)
     //unique keys , not sorted
 }
