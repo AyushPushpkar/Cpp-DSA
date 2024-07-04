@@ -2,12 +2,12 @@
 using namespace std ;
 
 int optimal(int a[],int n,int s){
-    map<int,int>mp ;
+    map<int,int>mp ;     //sc o(n)
     int sum =0;
     int cnt = 0 ;
     mp[0] = 1;
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){    //tc  o(nlogn)
         sum += a[i] ;
         int rem =sum -s ;
         cnt += mp[rem];
