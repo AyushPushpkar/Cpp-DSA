@@ -4,7 +4,7 @@ using namespace std;
 void explainSet(){
     set<int>st;
     //sorted and unique
-    st.insert(2);
+    st.insert(2);           //  o(logn)
     st.emplace(4);
 
     auto it=st.find(3); //st.end()
@@ -50,7 +50,7 @@ void explainMap(){
 
    mpp[1]=3;
    mpp.emplace(3,1);
-   mpp.insert({2,4});
+   mpp.insert({2,4});    // o(logn)
    
    for(auto it :mpp){
     cout << it.first << it.second << endl ;
@@ -69,7 +69,9 @@ void Multimap(){
 void Unorderedmap(){
     unordered_map<int,int> ump;
     // o(1)
-    //unique keys , not sorted
+    //unique keys , not sorted  
+    ump.insert(3,2);    // o(1)
+    //worst case o(n)
 }
 
 

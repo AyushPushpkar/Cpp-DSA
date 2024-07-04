@@ -3,6 +3,9 @@ using namespace std ;
 
 //dutch national flag algo
 //3 pointer
+// [0 ... low-1] = 0
+// [low ...mid-1 ] = 1
+//[high+1 ... n-1] =2
 void optimal(int a[] , int n){
     int low = 0 ,mid = 0 , high =n-1 ;  //sc o(1)
 

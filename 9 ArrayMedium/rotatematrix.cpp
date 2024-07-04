@@ -2,13 +2,13 @@
 using namespace std;
 
 void optimal2(vector<vector<int>>& v,int n){
-    //tc : o(n^2)                sc : o(1)
+    //               sc : o(1)
 
     for (int i = 0; i < n; i++) {       // o(n)
         for (int j = i+1; j < n; j++) {      //o(n/2)
             swap(v[i][j],v[j][i]);
         }
-        reverse(v[i].begin(),v[i].end());   // o(n/2)
+        reverse(v[i].begin(),v[i].end());   // o(n)
     }
 
     for (int i = 0; i < n; i++) {
