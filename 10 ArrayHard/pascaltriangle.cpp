@@ -14,7 +14,7 @@ void betterrow(int row ){
 
 void optimaltriangle(int row ){
 
-    for(int i=1;i<=row;i++){     // tc ~o(n^3)
+    for(int i=1;i<=row;i++){     // tc ~o(row * n)
         betterrow(i);
     }
 }
