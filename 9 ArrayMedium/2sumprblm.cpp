@@ -39,8 +39,9 @@ void better(int a[] , int n , int target){
     }
     for(int i=0 ; i<n ; i++){
         int rem = target -a[i] ;
-        if(mp.find(rem) != mp.end() && mp[rem] < mp[a[i]]){
-             cout << "yes " << mp[rem] << "," << mp[a[i]] << endl ;
+        auto it = mp.find(rem) ;
+        if(it != mp.end() && mp[rem] < mp[a[i]]){
+             cout << "yes " << it->second << "," << i << endl ;
         }
     }
 }

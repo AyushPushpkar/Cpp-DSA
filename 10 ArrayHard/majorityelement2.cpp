@@ -2,11 +2,11 @@
 using namespace std ;
 
 int optimal(int a[] , int n){
-    vector<int>v ;
+    vector<int>v ;             //sc  : o(1)
     int cnt1 = 0 , cnt2 =0;
     int el1 , el2 ;
 
-    for(int i=0;i<n;i++){   // o(n)
+    for(int i=0;i<n;i++){           // o(n)
         if(cnt1 == 0 && a[i]!= el2){
             cnt1 = 1;
             el1 = a[i];
@@ -23,7 +23,7 @@ int optimal(int a[] , int n){
         }
     }
     int cntel1 = 0 , cntel2 = 0;
-    for(int i=0;i<n;i++){     // o(n)
+    for(int i=0;i<n;i++){             // o(n)
         if(a[i] == el1) cntel1++ ;
         if(a[i] == el2) cntel2++ ;
     }
