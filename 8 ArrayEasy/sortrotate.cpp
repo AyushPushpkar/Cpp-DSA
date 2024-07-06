@@ -35,7 +35,7 @@ public:
 };
 
 int main(){
-    vector<int>nums = {6,10,6} ;
+    vector<int>nums = {6,10,5,6} ;
 
     Solution obj;
     // bool result = obj.check(nums);

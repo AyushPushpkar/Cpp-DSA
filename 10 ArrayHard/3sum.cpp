@@ -8,7 +8,7 @@ using namespace std ;
 //2 pointer
 void optimal(int a[] , int n){
     vector<vector<int>>ans ;
-    sort(a,a+n) ;
+    sort(a,a+n) ;        //  o(nlogn)
     int i=0 ;
 
     while(i<n-2){
@@ -18,8 +18,8 @@ void optimal(int a[] , int n){
             int temp1 =a[j] ,temp2 = a[k] ;
             int sum = a[i]+a[j]+a[k] ;
             if(sum == 0){
-                vector<int>temp = {a[i],a[j],a[k]};
-                ans.push_back(temp) ;
+                vector<int>tempv = {a[i],a[j],a[k]};
+                ans.push_back(tempv) ;
                 while(a[j] == temp1 && j<k){
                     j++ ;
                 }
@@ -54,17 +54,17 @@ void optimal(int a[] , int n){
 
 void optimal2(int a[] , int n){
     vector<vector<int>>ans ;
-    sort(a,a+n) ;
+    sort(a,a+n) ;          // o(nlogn)
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-2;i++){       // tc ~ o(n^2)
         if(i>0 && a[i] == a[i-1]) continue; // goes back to condn
         int j= i+1 , k =n-1 ;
         while(j<k){
             int temp1 =a[j] ,temp2 = a[k] ;
             int sum = a[i]+a[j]+a[k] ;
             if(sum == 0){
-                vector<int>temp = {a[i],a[j],a[k]};
-                ans.push_back(temp) ;
+                vector<int>tempv = {a[i],a[j],a[k]};
+                ans.push_back(tempv) ;
                 while(a[j] == temp1 && j<k){
                     j++ ;
                 }
@@ -141,9 +141,10 @@ int main(){
 
     // brute(a,n);
 
-    // better(a,n) ;
+    better(a,n) ;
+    cout << endl ;
 
     int m =13 ;
     int arr[m] = {-2,-2,3,0,2,0,-2,1,2,2,-1,-1,2} ;
-    optimal(arr,m) ;
+    optimal2(arr,m) ;
 }
