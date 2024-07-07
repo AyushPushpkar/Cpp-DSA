@@ -7,7 +7,7 @@ void optimal(vector<vector<int>> &a , int n){
     sort(a.begin() ,a.end());    //  o(nlogn)
     vector<vector<int>> ans ;    // sc : o(n)
 
-    for(int i=0;i<n;i++){      // o(2n)
+    for(int i=0;i<n;i++){      // o(n)
         int start = a[i][0];
         int end = a[i][1] ;
         if(ans.empty() || start > ans.back()[1]) {
