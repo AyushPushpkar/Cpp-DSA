@@ -9,8 +9,8 @@ int optimal(int a[],int n,int k){
 
     for(int i=0;i<n;i++){    //tc  o(nlogn)
         XOR = XOR^a[i] ;
-        int XR = XOR^k ;
-        cnt += mp[XR];
+        int x = XOR^k ;
+        cnt += mp[x];
         mp[XOR] += 1;
         
     }

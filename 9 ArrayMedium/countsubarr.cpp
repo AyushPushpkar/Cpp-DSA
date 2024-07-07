@@ -35,7 +35,7 @@ int main(){
     int n=10;
     int a[n] ={1,2,3,-3,1,1,1,4,2,-3} ;
 
-    int s = 3;
+    int s = 3;  // with sum  s
 
     cout << brute(a,n,s) << endl ;
 
