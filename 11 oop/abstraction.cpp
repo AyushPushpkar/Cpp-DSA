@@ -61,8 +61,6 @@ int main(){
 
     Student s1  = Student("Ayush",20 , 8) ;
     s1.intro() ;
-
-    s1.setAge(32) ;  // only if check true 
     s1.askForPromotion() ;
 
     Student s2 ;

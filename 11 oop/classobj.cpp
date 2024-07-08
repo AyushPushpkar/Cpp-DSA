@@ -3,11 +3,11 @@ using namespace std ;
 
 class Student{
 public:
-    string Name;
+    string Name;    // properties
     int Age ;
 
     void intro(){
-        cout << "Name : " << Name << endl ;
+        cout << "Name : " << Name << endl ;   // functionalities
         cout << "Age : " << Age << endl ;
     }
 
