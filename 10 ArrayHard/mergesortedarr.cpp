@@ -15,10 +15,10 @@ void optimal2(int a[],int n, int arr[], int m){
     int len = n+m ;
     int gap = (len/2) + (len%2) ;
 
-    while(gap>0){   
+    while(gap>0){          //  o(log2(n+m))
         int left =0 ;
-        int right = left + gap ;         // o(min(n,m))
-        while(right< len){
+        int right = left + gap ;        
+        while(right< len){       // o(n+m)
             if(left < n && right >= n){
                 swapifGreater(a,arr,left,right -n) ;
             }
