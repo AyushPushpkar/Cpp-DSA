@@ -74,5 +74,5 @@ int main(){
 
     cout << brute(a,n) << endl ;
 
-    cout << mergesort(a,0,n-1) << endl ;
+    cout << mergesort(a,0,n-1) << endl ;   // tc : o(2nlogn)
 }

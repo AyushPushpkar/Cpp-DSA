@@ -2,11 +2,11 @@
 using namespace std ;
 
 int merge(int a[],int low ,int mid , int high){
-    vector<int>v; //temp container
+    vector<int>v; //temp container           //sc o (n)
     int left =low;
     int right = mid+1;
     int cnt= 0 ;
-    while((left<=mid)&&(right<=high)){
+    while((left<=mid)&&(right<=high)){      // o(nlogn)
         if(a[left]<=a[right]){
             v.push_back(a[left]);
             left++;
