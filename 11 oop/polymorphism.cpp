@@ -56,10 +56,6 @@ public :
             ProgrammingLanguage = pl ;
         }
 
-    void DSA(){
-        cout << getName() << " learning DSA using " << ProgrammingLanguage << endl ;
-    }
-
     void assignment(){
         cout << Name << " is working on " << ProgrammingLanguage << " based project" << endl; 
     }
@@ -68,10 +64,6 @@ public :
 class core : public Student {
 public :
     string Subject ;
-
-    void Engineering(){
-        cout << Name << " " << Subject << " engineer" << endl ;
-    }
 
     core(string name , int age , int cg ,string subject)
         : Student(name,age,cg) {
