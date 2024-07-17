@@ -16,7 +16,7 @@ int better(int a[] , int n){
             int len = i - mp[sum] ; 
             maxlen = max(len , maxlen) ;
         }else{
-            mp[sum] = i ;
+            mp[sum] = i ; 
         }
     }
     return maxlen ;
