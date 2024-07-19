@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+//identify  sorted half
+
 int searchRotated(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
 
@@ -15,7 +17,7 @@ int searchRotated(int a[] ,int n,int target){
             else{
                 low = mid+1 ;
             }
-        }
+        }// right sorted 
         else{
             if(target >= a[mid] && target <= a[high]){
                 low = mid+1 ;
