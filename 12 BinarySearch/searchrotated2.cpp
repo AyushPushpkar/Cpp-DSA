@@ -5,12 +5,12 @@ using namespace std ;
 
 bool searchRotated(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
-
-    while(low <= high){          // tc : o(logn)
+                                  //tc : worst ~ o(n/2)
+    while(low <= high){          // tc : avg o(logn)
         int mid = (low+high)/2 ;
         if(a[mid] == target) return true ;
-        //left sorted
-        if(a[low] == a[mid] == a[high]){
+        // trim down
+        if(a[low] == a[mid] && a[mid] == a[high]){
             low++;
             high-- ;
             continue;
