@@ -10,8 +10,8 @@ int binary(int a[] ,int n){
     if(a[n-1] != a[n-2]) return a[n-1] ;
 
     int low = 1 , high = n-2 ;
-
-    while(low <= high){
+ 
+    while(low <= high){      // o(logn)
         int mid = (low+ high) /2 ;
         if(a[mid] != a[mid -1] && a[mid] != a[mid +1]){
             return a[mid] ;
