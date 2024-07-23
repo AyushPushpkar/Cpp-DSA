@@ -16,7 +16,6 @@ int multiPeak(int a[] ,int n){
         else if((a[mid -1 ] <a[mid]) ){  
             low = mid +1 ;
         }
-        //peak at left
         else {
             high = mid -1 ;
         }
