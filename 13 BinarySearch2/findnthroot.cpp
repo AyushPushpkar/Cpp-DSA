@@ -44,7 +44,7 @@ int powi(int i , int n){
             n= n-1 ;
         }
         else{
-            ans = i*i ;
+            i = i*i ;
             n = n/2 ;
         }
     }
