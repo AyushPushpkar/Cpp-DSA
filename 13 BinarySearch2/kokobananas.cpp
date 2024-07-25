@@ -8,7 +8,7 @@ int maxE(int a[] ,int n){
     int maxi = INT_MIN ;
 
     for(int i=0 ; i<n ;i++){
-        maxi = max(maxi , a[0]) ;
+        maxi = max(maxi , a[i]) ;
     }
     return maxi ;
 }
