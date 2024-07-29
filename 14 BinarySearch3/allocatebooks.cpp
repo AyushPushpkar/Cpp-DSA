@@ -41,7 +41,7 @@ int binary(int a[] ,int n ,int students){
     if(students > n) return -1 ;
 
     int low = *max_element(a,a+n) ;
-    int high = accumulate(a,a+n,0) ;
+    int high = accumulate(a,a+n,0) ; // 0 is starting value to add other values
 
     while(low <= high){             // o(log(sum-max+1)*n)
         int mid = (low+high)/2 ;
