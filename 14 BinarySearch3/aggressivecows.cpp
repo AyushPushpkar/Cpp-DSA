@@ -16,7 +16,7 @@ bool canWePlace(int a[] ,int n ,int cows ,int dist){
 }
 
 int binary(int a[],int n ,int cows){
-    int low = a[0] ,high =a[n-1] ;
+    int low = 1 ,high =a[n-1] - a[0] ;
 
     while(low<=high){    //tc : o(log(max-min)*n)
         int mid = (low+high)/2 ;
