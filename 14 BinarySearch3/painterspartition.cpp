@@ -6,6 +6,8 @@ using namespace std ;
 //consecutive
 //(max time) is min
 
+//minimized largest sum of the split.
+
 int Painters(int a[] ,int n , int mid){
     int painter = 1 ;
     int sum = 0 ;

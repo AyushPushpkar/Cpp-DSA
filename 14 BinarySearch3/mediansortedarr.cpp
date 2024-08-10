@@ -76,7 +76,7 @@ double merge(int arr1[],int n ,int arr2[] , int m){
     vector<int>v;   // sc : o(total)
     int left = 0;
     int right = 0 ;
-    while((left<n)&&(right<m)){          //o (total)
+    while((left<n)&&(right<m)){          //o (total)    TLE
         if(arr1[left]<=arr2[right]) v.push_back(arr1[left ++]);
         else v.push_back(arr2[right++]) ;
     }

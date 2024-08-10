@@ -6,7 +6,6 @@ double kthEl(int arr1[],int n ,int arr2[] , int m , int k){
     if(n>m) return kthEl(arr2,m,arr1,n , k) ;
     int low = max(0 , k-m) , high = min(k,n) ;      // tc : o(min(logn , logm))
     int left = k ;
-    int total = n+m ;
 
     while(low <=high){
         int mid1 = (low+high) >> 1 ; // right shift
