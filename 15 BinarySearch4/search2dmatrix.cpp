@@ -1,9 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//find the row with max 1's
-//if same 1's smallest row
-
 bool iterative(vector<int> &a ,int n,int target){
     int low = 0 , high = n-1 ;
 
