@@ -17,7 +17,7 @@ int maxEl(vector<vector<int>> &v ,int n ,int mid){
 pair<int,int> binary(vector<vector<int>> &v ,int n, int m){
     int low = 0 , high = m-1 ;
 
-    while(low <= high){
+    while(low <= high){     //tc : (logm * n)
         int mid = (low+high)/2 ;
         int row = maxEl(v , n ,mid) ;
         int left = (mid-1 >= 0) ? v[row][mid-1] : -1 ;
