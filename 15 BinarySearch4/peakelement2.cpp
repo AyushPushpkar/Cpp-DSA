@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-int maxEl(vector<int> &v ,int n){
-    int index = -1 ;
-    int max = INT_MIN ;
+int maxEl(vector<vector<int>> &v ,int n ,int mid){
+    int index = 0 ;
+    int max = v[0][mid] ;
 
-    for(int i=0 ;i<n ;i++){        //tc : o(n*m)
-        if(v[i] > max){
-            max= v[i] ;
+    for(int i=1 ;i<n ;i++){       
+        if(v[i][mid] > max){
+            max= v[i][mid] ;
             index = i ;
         }
     }
@@ -19,7 +19,7 @@ pair<int,int> binary(vector<vector<int>> &v ,int n, int m){
 
     while(low <= high){
         int mid = (low+high)/2 ;
-        int row = maxEl(v.at(mid) , n) ;
+        int row = maxEl(v , n ,mid) ;
         int left = (mid-1 >= 0) ? v[row][mid-1] : -1 ;
         int right = (mid+1 < m) ? v[row][mid+1] : -1 ;
 
