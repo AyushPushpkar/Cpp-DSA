@@ -23,7 +23,7 @@ int iterative(vector<int> &a ,int n,int target){
 pair<int,int> optimal(vector<vector<int>> &v ,int n, int m , int target){
     int row = 0 , col = m-1 ;
 
-    while(row < n && col >=0){
+    while(row < n && col >=0){       // tc : o(n+m) ;
         if(v[row][col] == target) return {row,col} ;
         else if(v[row][col] > target) col-- ;
         else row++ ;
