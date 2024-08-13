@@ -51,15 +51,15 @@ void check(int a[], int n){
 }
 
 int main(){
-    int n;
+    int n = 8;
     cin >> n;
-    int a[n];
+    int a[n] = {1,3,4,4,7,9,9,11};
     for(int i=0 ; i<n ; i++){
         cin >> a[i];
     }
 
     check(a,n);
 
-    // duplicate(a,n);
+    // duplicate(a,n); 
     optimal(a,n);
 }
