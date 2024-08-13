@@ -57,6 +57,7 @@ int main(){
     // Balanced Binary Tree:
     // The height of the left and right subtrees of every node 
     // differ by no more than 1.
+    //height is at max log(n)
     // Example:
     //       1
     //      / \

@@ -30,6 +30,35 @@ void preorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
     preorder(node->right);
 }
 
+// Inorder traversal function: Root -> Left -> Right
+void inorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
+    if (node == nullptr) return;
+    
+    // Recursively traverse the left subtree
+    inorder(node->left);
+
+    // Print the current node's data
+    cout << node->data << " ";
+    
+    // Recursively traverse the right subtree
+    inorder(node->right);
+}
+
+// Postorder traversal function: Root -> Left -> Right
+void postorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
+    if (node == nullptr) return;
+    
+    // Recursively traverse the left subtree
+    postorder(node->left);
+
+    // Recursively traverse the right subtree
+    postorder(node->right);
+
+    // Print the current node's data
+    cout << node->data << " ";
+    
+}
+
 int main() {
     // Create the root node
     struct Node* root = new Node(1);
@@ -41,6 +70,14 @@ int main() {
 
     // Call preorder traversal and print the tree
     preorder(root);
+    cout << endl ;
+
+    // Call inorder traversal and print the tree
+    inorder(root);
+    cout << endl ;
+
+    // Call postorder traversal and print the tree
+    postorder(root);
 
     return 0;
 }
