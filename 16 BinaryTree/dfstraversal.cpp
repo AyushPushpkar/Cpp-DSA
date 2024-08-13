@@ -31,7 +31,7 @@ void preorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
 }
 
 // Inorder traversal function: Root -> Left -> Right
-void inorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
+void inorder(Node* node) {        
     if (node == nullptr) return;
     
     // Recursively traverse the left subtree
@@ -45,7 +45,7 @@ void inorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
 }
 
 // Postorder traversal function: Root -> Left -> Right
-void postorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
+void postorder(Node* node) {       
     if (node == nullptr) return;
     
     // Recursively traverse the left subtree
