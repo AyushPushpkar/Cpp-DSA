@@ -42,7 +42,30 @@ void preorder(Node* root) {
 
 // Inorder traversal function: Root -> Left -> Right
 void inorder(Node* root) {        
+    vector<int> in ;        // tc : o(n)
     
+    stack<Node*> st ;      // sc : o(n)
+    Node* node = root ;
+
+    while(true){
+        if(node != nullptr){
+            st.push(node) ;
+            node = node->left ;
+        }
+        else{
+            if(st.empty() == true) break;
+            node = st.top() ;
+            st.pop() ;
+            in.push_back(node -> data) ;
+            node = node -> right ;
+        }
+        
+    }
+
+    for(auto it : in){
+        cout << it << " " ;
+    }
+    cout << endl;
 }
 
 // Postorder traversal function: Root -> Left -> Right
@@ -68,7 +91,6 @@ int main() {
 
     // Call inorder traversal and print the tree
     inorder(root);
-    cout << endl ;
 
     // Call postorder traversal and print the tree
     postorder(root);
