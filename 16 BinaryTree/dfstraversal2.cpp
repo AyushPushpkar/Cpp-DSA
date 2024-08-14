@@ -72,26 +72,68 @@ void inorder(Node* root) {
     cout << endl;
 }
 
-// Postorder traversal function: Root -> Left -> Right : 1 stack
+// Postorder traversal function: Root -> Left -> Right : 2 stack
 void postorder(Node* root) {       
-    vector<int> post;
+    vector<int> post ;        // tc : o(n)
     if(root == nullptr){
+        cout << "empty tree" << endl ;
+        return ;
+    }
+    
+    stack<Node*> st1 , st2 ;      // sc : o(2n)
+    st1.push(root) ;
+
+    while(!st1.empty()){
+        root = st1.top() ;
+        st1.pop() ;
+        st2.push(root) ;
+        if(root -> left != nullptr) st1.push(root -> left) ;
+        if(root -> right != nullptr) st1.push(root -> right) ;
+    }
+
+    while(!st2.empty()){
+        post.push_back(st2.top() -> data) ;
+        st2.pop() ;
+    }
+
+    for(auto it : post){
+        cout << it << " " ;
+    }
+    cout << endl;
+    
+}
+
+// Postorder traversal function: Root -> Left -> Right : 1 stack
+void postorder2(Node* curr) {       
+    vector<int> post;
+    if(curr == nullptr){
         cout << "empty tree" << endl ;
         return ;
     }
 
     stack<Node*> st;
-    st.push(root);
     
-    while(!st.empty())
+    while(curr != nullptr || !st.empty())
     {
-        root=st.top();
-        st.pop();
-        post.push_back(root->data);
-        if(root->left!= nullptr) st.push(root->left);
-        if(root->right!= nullptr)st.push(root->right);      
+        if(curr != nullptr){
+            st.push(curr) ;
+            curr = curr -> left ;
+        }      
+        else{
+            Node* temp = st.top() ->right ;
+            if( temp == nullptr){
+                temp = st.top() ;
+                st.pop() ;
+                post.push_back(temp -> data) ;
+                while( temp == st.top() -> right && !st.empty()){
+                    temp = st.top() ;
+                    st.pop() ;
+                    post.push_back(temp ->data) ;
+                }
+            }
+            else curr = temp ;
+        }
     }
-    reverse(post.begin(), post.end());
 
     for(auto it : post){
         cout << it << " " ;
@@ -119,6 +161,7 @@ int main() {
 
     // Call postorder traversal and print the tree
     postorder(root);
+    postorder2(root)  ;
 
     return 0;
 }
