@@ -36,7 +36,7 @@ int main(){
     int n=5 ;
     int a[n] ={4,2,2,6,4} ;
 
-    int k =6 ;
+    int k =6 ;  // target
 
     cout << brute(a,n,k) << endl ;
 
