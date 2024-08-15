@@ -20,8 +20,8 @@ int optimal(Node* node) {          // tc : o(n)
     int lh = optimal(node->left) ;      // sc : o(n) squeue case
     if(lh == -1 ) return -1 ;
     int rh = optimal(node->right) ;
-    if(lh == -1 && rh == -1) return -1 ;
-    
+    if(rh == -1) return -1 ;
+
     if(abs(lh- rh) > 1) return -1 ;
 
     return 1 + max(lh,rh) ;
