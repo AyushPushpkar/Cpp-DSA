@@ -12,18 +12,17 @@ struct Node {
     }
 };
 
-void topView(Node* root){
+void bottomView(Node* root){
     //vertical     multinode
-    map<int , int> mp ;            // sc : o(n)
-    queue<pair<Node* ,int>> todo  ;   // sc  : o(n)
+    map<int , int> mp ;
+    queue<pair<Node* ,int>> todo  ;
     todo.push({root, 0 }) ;
 
-    while(!todo.empty()){         // tc : o(nlogn)
+    while(!todo.empty()){
         auto p = todo.front() ;
         todo.pop() ;
         Node* node = p.first ;
         int line = p.second ;
-        if(mp.find(line) == mp.end())
         mp[line] = node -> data ;
 
         if(node ->left){
@@ -51,11 +50,14 @@ int main() {
 
     root->left = new Node(2);
     root->right = new Node(3);
-    root -> left -> right = new Node(4) ;
-    root -> right -> left = new Node(5) ;
-    root -> right -> right = new Node(6) ;
+    root -> left -> left = new Node(4) ;
+    root -> left -> right = new Node(5) ;
+    root -> right -> left = new Node(6) ;
+    root -> right -> right = new Node(7) ;
+    root -> left -> right ->left = new Node(8) ;
+    root -> left -> right ->right = new Node(9) ;
 
-    topView(root) ;
+    bottomView(root) ;
 
     return 0;
 }
