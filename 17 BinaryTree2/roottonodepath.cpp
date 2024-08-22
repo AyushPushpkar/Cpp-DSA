@@ -27,7 +27,6 @@ bool getPath(Node* root , vector<int> &v , int target ){
     return false ;
 }
 
-//tc : o(n)      sc : o(n)
 void rootToNode(Node* root , int target){
     vector<int> arr ;
     if(root == nullptr) return  ;
