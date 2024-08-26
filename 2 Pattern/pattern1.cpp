@@ -192,6 +192,6 @@ void printt(int n){
 int main(){
     int n;
     cin >> n;
-    print3(n);
+    print10(n);
     return 0;
 }
