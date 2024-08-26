@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+//complete binary tree
 struct Node {
     int data;
     struct Node* left;

@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+//min time to burn bt from a node
 struct Node {
     int data;
     struct Node* left;
@@ -12,7 +13,7 @@ struct Node {
     }
 };
 
-void markParents(Node* root , unordered_map<Node* , Node*> &parent_track , Node* target){
+void markParents(Node* root , unordered_map<Node* , Node*> &parent_track){
     queue<Node* > q ;
     q.push(root) ;
 
@@ -28,53 +29,49 @@ void markParents(Node* root , unordered_map<Node* , Node*> &parent_track , Node*
             q.push(curr -> right) ;
         }
     }
+
 }
 
-void nodesK(Node* root , Node* target ,int k ){
-
-    if(!root) return ; // tc : o(2n)         sc : o(3n)
+int burnTree(Node* root , Node* node){
+                             
+    if(root == nullptr) return 0;   
 
     unordered_map<Node* , Node*> parent_track ; 
-    markParents(root , parent_track ,target) ; // marking parents for upward traversal
+    markParents(root , parent_track ) ;
 
     unordered_map<Node* , bool> visited ;
     queue<Node*>q;
-    q.push(target);
-    visited[target] = true ;
-    int curr_level = 0 ; // distance
+    q.push(node);
+    visited[node] = true ;
+    int time = 0 ;
 
-    while(!q.empty()){ // to find nodes at k dist
+    while(!q.empty()){ 
         int size = q.size() ;
-        if(curr_level++ == k) break; // if equi break else increment
+        bool flag = false; // To check if any node at the current level catches fire
         for(int i=0 ;i<size ; i++){
             Node* cur = q.front() ;
             q.pop() ;
             if(cur ->left && !visited[cur->left]){
                 q.push(cur->left) ;
                 visited[cur ->left] =true ;
+                flag = true;
             }
             if(cur ->right && !visited[cur->right]){
                 q.push(cur->right) ;
                 visited[cur ->right] =true ;
+                flag = true;
             }
             if(parent_track[cur] && !visited[parent_track[cur]]){
                 q.push(parent_track[cur]) ;
                 visited[parent_track[cur]] =true ;
+                flag = true;
             }
         }
+        if(flag) time++; // Increment time only if there is any new node catching fire
     }
 
-    vector<int>res ;
-    while(!q.empty()){
-        Node* curr = q.front() ;
-        q.pop() ;
-        res.push_back(curr->data) ;
-    }
-
-    for(auto it : res){
-        cout << it << " " ;
-    }
-    cout << endl;
+    return time ;
+    
 }
 
 int main(){
@@ -87,12 +84,11 @@ int main(){
     root -> left -> right = new Node(5) ;
     root -> right -> left = new Node(6) ;
     root -> right -> right = new Node(7) ;
-    root -> left -> right ->left = new Node(8) ;
-    root -> left -> right ->right = new Node(9) ;
+    root -> left -> left ->left = new Node(8) ;
+    root -> left -> left ->right = new Node(9) ;
 
-    int k = 2 ;
-    Node* target = root -> left -> right ;
-    
-    nodesK(root , target ,k ) ;
+    Node* node = root -> left -> right ;
+
+    cout << burnTree(root , node) << endl ;
 
 }
