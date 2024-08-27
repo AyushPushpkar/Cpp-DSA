@@ -32,6 +32,7 @@ Node* buildTreeHelper(vector<int>& preorder, int preStart, int preEnd,
     return root;
 }
 
+// tc : o(n)      sc : o(n)
 // Function to build a tree from preorder and inorder traversals
 Node* buildTree(vector<int>& preorder, vector<int>& inorder) {
     unordered_map<int, int> inMap;  // Use unordered_map for better performance
@@ -45,7 +46,7 @@ Node* buildTree(vector<int>& preorder, vector<int>& inorder) {
     return root;
 }
 
-// Function to print the tree in level-order (breadth-first) traversal with levels separated
+// level-order traversal 
 void printLevelOrder(Node* root) {
     if (!root) return;
 
@@ -53,7 +54,7 @@ void printLevelOrder(Node* root) {
     q.push(root);
 
     while (!q.empty()) {
-        int levelSize = q.size(); // Number of nodes at the current level
+        int levelSize = q.size(); 
         for (int i = 0; i < levelSize; ++i) {
             Node* node = q.front();
             q.pop();
@@ -63,7 +64,7 @@ void printLevelOrder(Node* root) {
             if (node->left) q.push(node->left);
             if (node->right) q.push(node->right);
         }
-        cout << endl; // Print newline after each level
+        cout << endl; 
     }
 }
 
