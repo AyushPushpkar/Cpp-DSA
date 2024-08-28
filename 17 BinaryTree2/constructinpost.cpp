@@ -24,10 +24,10 @@ Node* buildTreeHelper(vector<int>& inorder, int inStart, int inEnd,
     int inRoot = inMap[postorder[postEnd]];
     int numsLeft = inRoot - inStart;
 
-    root->left = buildTreeHelper(inorder, inStart , inRoot - 1, 
-                                postorder, postStart, postStart + numsLeft -1,inMap);
-    root->right = buildTreeHelper(inorder, inRoot + 1 , inEnd,
-                                postorder, postStart + numsLeft, postEnd - 1, inMap);
+    root->left = buildTreeHelper(inorder, inStart , inRoot - 1, postorder,
+                                postStart, postStart + numsLeft -1,inMap);
+    root->right = buildTreeHelper(inorder, inRoot + 1 , inEnd, postorder,
+                                postStart + numsLeft, postEnd - 1, inMap);
 
     return root;
 }
@@ -38,7 +38,7 @@ Node* buildTree(vector<int>& inorder ,vector<int>& postorder) {
 
     if(inorder.size() != postorder.size()) return nullptr ;
 
-    for (int i = 0; i < inorder.size(); ++i) {
+    for (int i = 0; i < inorder.size(); i++) {
         inMap[inorder[i]] = i;
     }
 
