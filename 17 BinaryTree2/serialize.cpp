@@ -12,6 +12,7 @@ struct Node {
     }
 };
 
+// tc : o(n)    sc : o(n)
 string serialize(Node* root ){
     if(!root) return "";
 
@@ -39,10 +40,10 @@ string serialize(Node* root ){
 Node* deserialize(string data){
     if(data.size() == 0) return nullptr ;
 
-    stringstream s(data) ;
+    stringstream s(data) ;  // allows string to be iterated over as objects
     string str ;
-    getline(s,str ,',') ;
-    Node *root = new Node(stoi(str)) ;
+    getline(s,str ,',') ;  // (stream , string ,separation )
+    Node *root = new Node(stoi(str)) ; //convert a string to an integer
     queue<Node*> q ; 
     q.push(root) ;
 
@@ -56,7 +57,7 @@ Node* deserialize(string data){
             node ->left == nullptr ;
         }
         else{
-            Node* leftNode = new Node(stoi(str)) ;
+            Node* leftNode = new Node(stoi(str)) ;  //
             node->left = leftNode ; 
             q.push(leftNode) ;
         }
@@ -108,6 +109,9 @@ int main(){
     root -> right -> right = new Node(7) ;
     root -> left -> right ->left = new Node(8) ;
     root -> left -> right ->right = new Node(9) ;
+
+    printLevelOrder(root) ;
+    cout << endl ;
 
     string res = serialize(root) ;
     cout << res << endl ;
