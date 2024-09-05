@@ -33,6 +33,25 @@ void insertEnd(Node* head , int End){
 
 }
 
+void insertPosition(Node* head , int position , int node){
+    Node* newNode = new Node(node) ;
+    Node* temp = head ;
+
+    for(int i = 1 ; i<position ;i++){
+        if(temp == nullptr){
+            cout << " out of bound " << endl ;
+            return ;
+        }
+        else{
+            temp = temp->next ;
+        }
+    }
+
+    newNode -> next = temp->next ;
+    temp->next = newNode ;
+
+}
+
 void printLL(Node* head){
     if(head == nullptr) return ;
 
@@ -52,5 +71,6 @@ int main(){
 
     Node* newStart = insertStart(head , 100) ;
     insertEnd(head , 103) ;
+    insertPosition(head , 3 , 102) ;
     printLL(newStart) ;
 }
