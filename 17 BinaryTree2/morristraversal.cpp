@@ -14,6 +14,7 @@ struct Node {
 
 // Threaded binary tree
 //inorder
+// tc : ~o(n)        sd : o(1)
 void morrisTraversal(Node* root){
     vector<int> inorder ;
     Node* cur = root ;
@@ -46,7 +47,7 @@ void morrisTraversal(Node* root){
     }
 }
 
-//postorder
+//preorder
 void morrisTraversal2(Node* root){
     vector<int> preorder ;
     Node* cur = root ;
