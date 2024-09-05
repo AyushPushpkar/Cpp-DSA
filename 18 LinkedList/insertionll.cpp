@@ -18,6 +18,21 @@ Node* insertStart(Node* head , int start){
     return newNode ;
 }
 
+void insertEnd(Node* head , int End){
+    Node* newNode = new Node(End) ;
+    if(head == nullptr){
+        head = newNode ;
+    }
+    else{
+        Node* temp = head ;
+        while(temp->next != nullptr){
+            temp = temp ->next ;
+        }
+        temp -> next = newNode ;
+    } 
+
+}
+
 void printLL(Node* head){
     if(head == nullptr) return ;
 
@@ -36,5 +51,6 @@ int main(){
     head->next -> next-> next-> next-> next = new Node(6);
 
     Node* newStart = insertStart(head , 100) ;
+    insertEnd(head , 103) ;
     printLL(newStart) ;
 }
