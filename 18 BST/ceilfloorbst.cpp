@@ -33,6 +33,25 @@ int Ceil(Node* root , int key){
     return ceil ;
 }
 
+int Floor(Node* root , int key){
+    int floor = -1 ;
+    while(root ){
+        if(root -> data == key){
+            floor = root -> data  ;
+            return floor ;
+        }
+        if(key < root -> data){
+            root = root -> left ;
+        }
+        else{
+            floor = root -> data ;
+            root = root -> right ;
+        }
+    }
+
+    return floor ;
+}
+
 int main(){
 
     struct Node* root = new Node(8);
@@ -49,4 +68,5 @@ int main(){
 
     int key = 9;
     cout << Ceil(root , key) << endl ;
+    cout << Floor(root , key) << endl ;
 }
