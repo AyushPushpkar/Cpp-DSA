@@ -33,6 +33,7 @@ int Ceil(Node* root , int key){
     return ceil ;
 }
 
+//val <= key
 int Floor(Node* root , int key){
     int floor = -1 ;
     while(root ){
