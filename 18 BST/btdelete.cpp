@@ -12,6 +12,7 @@ struct Node {
     }
 };
 
+// tc : o(h)
 Node* deleteNode(Node* root, int key) {
     if( !root ) return NULL;
     if( root->val < key ) root->right = deleteNode(root->right, key);
@@ -77,7 +78,7 @@ int main(){
     root -> right -> right = new Node(15) ;
     root -> right -> right -> left = new Node(13) ;
 
-    int node = 10;
+    int node = 7;
     Node* ans = deleteNode(root , node) ;
     levelorder(ans) ;
 }
