@@ -55,6 +55,6 @@ int main(){
     struct Node* a = root->left->right->left; // Node with value 8
     struct Node* b = root->right->right;      // Node with value 7
 
-    cout << lca(root ,a, b) ->data << endl ; ;
+    cout << lca(root ,a, b) ->data << endl ; 
 
 }
