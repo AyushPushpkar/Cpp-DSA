@@ -14,11 +14,18 @@ struct Node {
 
 //tc : o(h)
 Node* inSuccessor(Node* root , Node* p ){
-   Node* successor = nullptr ;
+    Node* successor = nullptr ;
 
-   while(root != nullptr){
-
-   }
+    while(root != nullptr){
+        if(p  -> data >= root->data){
+            root = root -> right ;
+        }
+        else{
+            successor = root ;
+            root = root->left  ;
+        }
+    }
+    return successor ; 
 }
 
 int main(){
@@ -34,5 +41,9 @@ int main(){
     root -> right -> left = new Node(10) ;
     root -> right -> right = new Node(15) ;
     root -> right -> right -> left = new Node(13) ;
+
+    struct Node* b = root -> right ; // Node with value 7
+
+    cout << inSuccessor(root , b) ->data << endl ;
 
 }
