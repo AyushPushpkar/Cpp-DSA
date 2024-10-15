@@ -60,6 +60,6 @@ int main(){
 
     check(a,n);
 
-    // duplicate(a,n); 
+    duplicate(a,n); 
     optimal(a,n);
 }
