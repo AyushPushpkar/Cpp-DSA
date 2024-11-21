@@ -4,9 +4,9 @@ using namespace std ;
 class StackArr{
 public:
     int top = -1 ;  
-    int st[10] ;
+    int st[10] ;   // sc : o(10)     extra space
 
-    void push(int n){
+    void push(int n){   // o(1)
         if(top >= 9){
             cout << "oob" << endl ;
             return ; 
@@ -15,22 +15,24 @@ public:
         st[top] = n ; 
     }
 
-    int gettop(){
+    int gettop(){   // o(1)
         if(top == -1){
             return -1; 
         }
         return st[top] ;
     }
 
-    void pop(){
+    int pop(){   // o(1)
         if(top == -1){
             cout << " empty " << endl;
             return ; 
         }
+        int el = st[top];
         top-- ;
+        return el ;
     }
 
-    int size(){
+    int size(){    // o(1)
         if(top == -1){
             return 0; 
         }

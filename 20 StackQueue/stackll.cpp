@@ -30,15 +30,17 @@ public:
         return top->data ;
     }
 
-    void pop(){
+    int pop(){
         if (top == nullptr) {  
             cout << "Stack is empty" << endl;
-            return;
+            return -1 ;
         }
         Node* temp = top ;
         top = top -> next ;
+        int ans = temp->data ;
         delete temp ;
         size = size -1 ; 
+        return ans ;
     }
 
     int getsize(){
@@ -51,7 +53,7 @@ int main(){
 
     StackLL s1  ;
     s1.push(5) ;
-    s1.pop();
+    cout << s1.pop() << endl;
     cout << s1.gettop() << endl;
     s1.push(6);
     s1.push(7);
