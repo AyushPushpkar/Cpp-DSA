@@ -46,7 +46,7 @@ int main(){
     root -> right -> right = new Node(15) ;
     root -> right -> right -> left = new Node(13) ;
 
-    int target = 14;
+    int target = 15;
     Node* ans = BTsearch2(root , target) ;
     if(ans != nullptr ){
         cout << ans->data << endl;

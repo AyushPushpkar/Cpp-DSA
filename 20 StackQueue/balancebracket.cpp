@@ -13,11 +13,9 @@ bool balancedParanthesis(string s ){  // tc : o(n)   // sc : o(n)
             if(st.empty()) return false ;
             char ch = st.top() ;
             st.pop() ;
-            if((s[i] == ')' && ch == '(') || (s[i] == ']' && ch == '[')
-                    || (s[i] == '}' && ch == '{') ){   
-            }
-            else{
-                return false ;
+            if(!((s[i] == ')' && ch == '(') || (s[i] == ']' && ch == '[')
+                    || (s[i] == '}' && ch == '{') )){   
+                        return false ;
             }
         }
     }
@@ -27,6 +25,6 @@ bool balancedParanthesis(string s ){  // tc : o(n)   // sc : o(n)
 }
 
 int main(){
-    string s = "({}[(){{}]})" ;
+    string s = "({}[(){}])" ;
     cout << balancedParanthesis(s) ;
 }
