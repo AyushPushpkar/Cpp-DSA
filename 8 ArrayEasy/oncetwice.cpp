@@ -4,8 +4,8 @@ using namespace std ;
 int onceoptimal(int a[] ,int n){
 
     int XOR =0 ;
-    for(int i=0 ; i<n ;i++){          // o(n/2 +1)
-        XOR = XOR^a[i] ;
+    for(int i=0 ; i<n ;i++){          // o(n)
+        XOR = XOR^a[i] ;             // x ^ x = 0 , x ^ 0 = x
     }   
     cout << XOR << endl ;
 }

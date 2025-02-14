@@ -9,7 +9,7 @@ int main(){
 
         string f;  //filter
         for(char c : s){
-            if(isalnum(c)) {
+            if(isalnum(c)) { //Checks if c is an alphanumeric character (i.e., a letter or digit)
                 f+= tolower(c);
             }
         }

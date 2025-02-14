@@ -35,7 +35,6 @@ Node* mergeSortedLists(Node* L1, Node* L2) {
         tail->next = L2;  
     }
 
-    // Store the head of the merged list
     Node* mergedHead = dummy->next;
     delete dummy; // Free the dummy node
     return mergedHead;
@@ -67,12 +66,10 @@ int main() {
     Node* L1 = nullptr;
     Node* L2 = nullptr;
 
-    // Example input for L1: 1 -> 3 -> 5
     append(L1, 1);
     append(L1, 3);
     append(L1, 5);
 
-    // Example input for L2: 2 -> 4 -> 6
     append(L2, 2);
     append(L2, 4);
     append(L2, 6);

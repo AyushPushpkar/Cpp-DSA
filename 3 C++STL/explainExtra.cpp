@@ -36,7 +36,7 @@ void explainExtra(){
 
 void explainExtra4(){
 int num=7;
-int cnt=__builtin_popcount(num);
+int cnt=__builtin_popcount(num); // counts the number of 1s in binary 
 long long ll=4567876434578;
 int cnt=__builtin_popcountll(ll);
 }
@@ -53,8 +53,4 @@ cout << "Max element (ASCII value): " << maxi << endl;
    cout << "Max element (character): " << char(maxi) << endl;
 }
 
-int main(){
-    explainExtra3(); 
-    
-}
 

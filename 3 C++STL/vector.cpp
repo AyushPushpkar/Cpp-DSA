@@ -7,7 +7,7 @@ void expvector(){
     v.push_back(1);
     v.emplace_back(2);
 
-    vector<int> v1(5,20);
+    vector<int> v1(5,20); // size , value
     vector<int> v2(v1);
 
     //iterator
@@ -36,7 +36,7 @@ void expvector(){
     v.erase(v.begin()+1,v.begin()+3);
 
     v.insert(v.begin()+1,200);
-    v.insert(v.begin()+1,2 ,300);
+    v.insert(v.begin()+1,2 ,300); // position , num , value
 
     v.size();
     v.pop_back();
