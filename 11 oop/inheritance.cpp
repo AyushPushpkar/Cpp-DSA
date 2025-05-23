@@ -83,6 +83,6 @@ int main(){
     d1.DSA() ;
     d1.askForPromotion() ;
 
-    core s1 = core("Venom" , 25 ,10 , "Electrical") ;
-    s1.Engineering() ;
+    core c1 = core("Venom" , 25 ,10 , "Electrical") ;
+    c1.Engineering() ;
 }

@@ -22,7 +22,7 @@ int floor(int a[] ,int n ,int target){
     return ans  ;
 }
 
-int lbound(int a[] ,int n ,int target){
+int lbound(int a[] ,int n ,int target){  // ceil
     int ans = n ;   //tc  :  o(log2(n))
 
     int low = 0 , high = n-1 ;

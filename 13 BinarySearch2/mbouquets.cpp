@@ -32,9 +32,9 @@ bool possible(int a[] ,int n , int m ,int k ,int i){
         else{
             noB += cnt/k ;
             if( noB >= m) return true ;
-                cnt = 0;
-            }
+            cnt = 0;
         }
+    }
     noB += cnt/k ;
     if( noB >= m) return true ;
     return false ;

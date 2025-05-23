@@ -4,7 +4,7 @@ using namespace std;
 //swaping array
 void rev(int a[] , int n){
     int i;
-    for(i=0;i<=n/2;i++){
+    for(i=0;i<n/2;i++){
         swap(a[i],a[n-i-1]);
     }
     for(i=0;i<n;i++){

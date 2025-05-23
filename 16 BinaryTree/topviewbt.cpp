@@ -13,7 +13,7 @@ struct Node {
 };
 
 void topView(Node* root){
-    //vertical     multinode
+    //vertical   node
     map<int , int> mp ;            // sc : o(n)
     queue<pair<Node* ,int>> todo  ;   // sc  : o(n)
     todo.push({root, 0 }) ;

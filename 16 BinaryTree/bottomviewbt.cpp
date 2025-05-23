@@ -13,7 +13,7 @@ struct Node {
 };
 
 void bottomView(Node* root){
-    //vertical     multinode
+    //vertical    node
     map<int , int> mp ;
     queue<pair<Node* ,int>> todo  ;
     todo.push({root, 0 }) ;

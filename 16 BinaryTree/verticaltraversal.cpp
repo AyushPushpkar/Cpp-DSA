@@ -23,7 +23,7 @@ struct Node {
 void vertical(Node* root){
     //vertical    level     multinode
     map<int , map<int , multiset<int>>> mp ;
-    queue<pair<Node* , pair<int ,int>>> todo  ;
+    queue<pair<Node* , pair<int ,int>>> todo  ; 
     todo.push({root,{0 , 0 }}) ;
 
     while(!todo.empty()){

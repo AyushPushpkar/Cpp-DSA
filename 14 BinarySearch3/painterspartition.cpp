@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-// painter"s partiotion / split arr - largest sum
+// painter"s partition / split arr - largest sum
 //each painter at least one job
 //consecutive
 //(max time) is min

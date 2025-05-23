@@ -50,7 +50,7 @@ int powi(int i , int n){
     }
     // i^n ;
     return ans ;
-}
+}  
 
 int linear(int n , int target){
     int ans = -1 ;

@@ -59,7 +59,7 @@ long double pQueue(int a[] ,int n ,int  gasStation){
 }
 
 long double brute(int a[] ,int n ,int  gasStation){
-    vector<int> howMany(n - 1, 0);
+    vector<int> howMany(n - 1, 0);  // sections
 
     for(int i=1 ;i<= gasStation ;i++){   // o(k*n)  TLE
         long double maxSec = -1 ;

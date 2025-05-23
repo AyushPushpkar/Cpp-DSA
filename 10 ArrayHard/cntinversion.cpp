@@ -13,7 +13,7 @@ int merge(int a[],int low ,int mid , int high){
         }
         else{
             v.push_back(a[right]);
-            cnt += (mid - left +1) ;
+            cnt += (mid - left +1) ;   // sorted arrays
             right++;
         }
     }

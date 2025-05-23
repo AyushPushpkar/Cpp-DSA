@@ -12,6 +12,7 @@ struct Node {
     }
 };
 
+// height 
 int recursive(Node* node) {          // tc : o(n)
     if(node == nullptr) return 0 ;
 

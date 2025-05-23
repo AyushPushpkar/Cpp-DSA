@@ -30,7 +30,7 @@ void preorder(Node* node) {        // tc : o(n)  // sc : o(n) auxilary space
     preorder(node->right);
 }
 
-// Inorder traversal function: Root -> Left -> Right
+// Inorder traversal function: Left -> Root -> Right
 void inorder(Node* node) {        
     if (node == nullptr) return;
     
@@ -44,7 +44,7 @@ void inorder(Node* node) {
     inorder(node->right);
 }
 
-// Postorder traversal function: Root -> Left -> Right
+// Postorder traversal function:  Left -> Right -> Root 
 void postorder(Node* node) {       
     if (node == nullptr) return;
     
