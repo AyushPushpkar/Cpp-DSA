@@ -1,71 +1,61 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-void bfstraversal( int row , int col ,vector<vector<int>> &vis , vector<vector<int>> &grid){
+void dfstraversal(int row , int col ,vector<vector<int>> &grid , vector<vector<int>> &newgrid ,
+    int newcolor , int inicolor , int delrow[] , int delcol[] ){
 
     int n = grid.size() ;
     int m = grid[0].size() ;
 
-    vis[row][col] = 1 ;
+    newgrid[row][col] = newcolor ; 
 
-    queue<pair<int,int>> q ;  // sc :  o(n^2)
-    q.push({row,col}) ;
+    for(int i= 0 ; i <4  ; i ++){
+        int neighrow = row+delrow[i] ;
+        int neighcol = col + delcol[i]; 
 
-    while(!q.empty()){  
-        pair<int,int> node = q.front();
-        int row = node.first , col = node.second ;
-        q.pop() ;
-
-        for(int delrow = -1 ; delrow<= 1 ;delrow++){
-            for (int delcol= -1  ; delcol<= 1 ; delcol++){
-                int neighrow = row+delrow ;
-                int neighcol = col+delcol ; 
-
-                if(neighrow >= 0 && neighrow < n && neighcol >=0 && neighcol <m){
-                    if(!vis[neighrow][neighcol] && grid[neighrow][neighcol] == 1){
-                        vis[neighrow][neighcol] = 1 ;
-                        q.push({neighrow,neighcol}) ;
-                    }
-                }
+        if(neighrow >= 0 && neighrow < n && neighcol >=0 && neighcol <m){
+            if(newgrid[neighrow][neighcol] != newcolor && grid[neighrow][neighcol] == inicolor){
+                dfstraversal(neighrow,neighcol , grid , newgrid, newcolor , inicolor , delrow , delcol) ;
             }
-        
         }
+
     }
 
 }
 
-int numislands( vector<vector<int>> &grid){  // tc : o(n^2)
-    int n = grid.size() ;
-    int m = grid.at(0).size() ;
+// tc : o(n*m) + o(n*m*4)
+vector<vector<int>> floodfill( vector<vector<int>> &grid , int sr , int sc , int newcolor){  
 
-    int cnt = 0 ;
-    vector<vector<int>> vis(n,vector<int>(m , 0)) ; // sc : o(n^2)
+    vector<vector<int>> newgrid = grid ;  // sc : O(n*m)
 
-    for(int i=0 ;i<n ;i++){
-        for (int j=0 ; j<m ;j++){
-            if(!vis[i][j] && grid[i][j] ==1 ){
-                bfstraversal(i,j , vis , grid) ;  
-                cnt++ ;
-            }
-        }
-        
-    }
+    int inicolor = grid[sr][sc] ; 
 
-    return cnt ;
+    int delrow[] = { -1, 0 ,1  , 0} ;
+    int delcol[] = {0 , -1 , 0 , 1} ;
+
+    dfstraversal(sr,sc , grid , newgrid, newcolor , inicolor , delrow , delcol) ;  // sc : : O(n*m)   stack space
+
+    return newgrid ;
 }
 
 int main(){
+    
+    int sr = 2 , sc = 0 ;
+    int newcolor = 3; 
 
     vector<vector<int>> grid = {
-        {1, 1, 0, 0, 0},  // Island 1
-        {0, 0, 0, 0, 1},  // Island 3
-        {0, 0, 1, 0, 0},  // Island 2
-        {0, 0, 1, 0, 0}
+        {1, 1, 1},  
+        {2, 2, 0},  
+        {2, 2, 2}
     };
 
-    int ans = numislands(grid) ;
+    vector<vector<int>> ans = floodfill(grid , sr , sc , newcolor) ;
     
-    cout << ans << endl ; 
+    for(auto it : ans){
+        for(int itt : it){
+            cout << itt << " " ;
+        }cout << endl ; 
+    }
 
     return 0 ;
 }
