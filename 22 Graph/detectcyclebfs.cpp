@@ -37,6 +37,8 @@ bool bfsgraph(int vis[] , int n , vector<int> adj[] , int startnode){
         }
     }
 
+    return false ;
+
 }
 
 bool isCycle(int n , vector<int> adj[] , int startnode){
