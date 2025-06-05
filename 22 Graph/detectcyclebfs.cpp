@@ -13,7 +13,7 @@ using namespace std ;
                            
 */
 
-bool bfsgraph(int vis[] , int n , vector<int> adj[] , int startnode){
+bool bfsgraph(int vis[] , vector<int> adj[] , int startnode){
 
 
     vis[startnode] = 1 ;
@@ -47,7 +47,7 @@ bool isCycle(int n , vector<int> adj[] , int startnode){
 
     for(int i = 1 ; i<= n ;i++){
         if(!vis[i]){
-            if(bfsgraph(vis , n ,  adj , i)== true) return true ;
+            if(bfsgraph(vis ,  adj , i)== true) return true ;
         }
     }
 
@@ -56,7 +56,6 @@ bool isCycle(int n , vector<int> adj[] , int startnode){
 
 int main(){
     int n = 8; // number of vertices
-    int m = 8 ; // number of edges
 
     vector<int> adj[n + 1]; // adjacency list from 1 to n
 
@@ -64,9 +63,7 @@ int main(){
     vector<pair<int, int>> edges = {
         {1, 2},
         {1, 3},
-        {2, 4}, 
-        // {3, 5},
-        // {4, 6},  
+        {2, 4},   
         {5, 6}, 
         {5, 7},
         {5, 8},
