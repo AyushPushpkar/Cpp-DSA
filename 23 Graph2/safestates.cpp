@@ -8,7 +8,9 @@ using namespace std ;
 *        8   7——→5←——6
 *      ↙  ↖
 *     9———→10
-*/                    
+*/       
+
+//? safe node : every path leads to a terminal node
 
 bool dfstraversal( vector<int> adj[] , int startnode , int vis[] ,int check[] ){
 
