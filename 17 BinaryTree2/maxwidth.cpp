@@ -62,3 +62,10 @@ int main(){
     cout << maxWidth(root) << endl ;
 
 }
+
+/*
+? Type	                Signed?	 Range (64-bit)	        Typical Use Case
+* size_t	            No	     0 to ~18 quintillion	Container sizes, indices, memory sizes
+* long long	            Yes	     ~−9e18 to +9e18	    Math with large or negative values
+* unsigned long long	No	     0 to ~18 quintillion	Binary tree indices, bitmasks, hashes
+*/

@@ -12,7 +12,7 @@ struct Node {
     }
 };
 
-void markParents(Node* root , unordered_map<Node* , Node*> &parent_track , Node* target){
+void markParents(Node* root , unordered_map<Node* , Node*> &parent_track ){
     queue<Node* > q ;
     q.push(root) ;
 
@@ -35,7 +35,7 @@ void nodesK(Node* root , Node* target ,int k ){
     if(!root) return ; // tc : o(2n)         sc : o(3n)
 
     unordered_map<Node* , Node*> parent_track ; 
-    markParents(root , parent_track ,target) ; // marking parents for upward traversal
+    markParents(root , parent_track ) ; // marking parents for upward traversal
 
     unordered_map<Node* , bool> visited ;
     queue<Node*>q;

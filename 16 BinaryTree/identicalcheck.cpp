@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//height(left) - height(right) <= 1
-
 struct Node {
     int val;
     struct Node* left;
