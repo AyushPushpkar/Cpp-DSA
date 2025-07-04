@@ -6,7 +6,7 @@ using namespace std ;
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             
 *        8   7——→5←——6
-*       ↙↖
+*       ↗↖
 *      9——→0
 *
 */       
@@ -14,20 +14,17 @@ using namespace std ;
 //? indegree - no of incoming edges to a node
 
 // tc : o(V) + o(E)
-vector<int> safestates(int n , vector<int> adj[] ){
+vector<int> topologicalSorting(int n , vector<int> adj[]){
     vector<int> ans ;
 
-    vector<int> adjrev[n] ;
     vector<int> indegree(n,0) ;
+    queue<int> q ;
 
-    for(int i=0 ;i<n ;i++){
+    for(int i = 0 ; i< n ;i++){
         for(auto it : adj[i]){
-            adjrev[it].push_back(i) ;
-            indegree[i] ++ ;
+            indegree[it] ++ ;
         }
     }
-
-    queue<int> q ;
 
     for(int i = 0 ; i< n ;i++){
         if(indegree[i] ==0) q.push(i) ;
@@ -39,7 +36,7 @@ vector<int> safestates(int n , vector<int> adj[] ){
         ans.push_back(node) ;
 
         // node in topo sort so remove it from indegree
-        for(auto it : adjrev[node]){
+        for(auto it : adj[node]){
             indegree[it]-- ;
             if(indegree[it] == 0) q.push(it) ;
         }
@@ -64,7 +61,7 @@ int main(){
         {6, 5}, 
         {7, 5},
         {8, 2},
-        {8, 9},
+        {9, 8},
         {9, 0},
         {0, 8},   
     };
@@ -76,7 +73,7 @@ int main(){
         adj[u].push_back(v);
     }   
     
-    vector<int> ans = safestates(n , adj ) ;
+    vector<int> ans = topologicalSorting(n , adj ) ;
 
     for(auto it : ans){
         cout << it << " " ;
