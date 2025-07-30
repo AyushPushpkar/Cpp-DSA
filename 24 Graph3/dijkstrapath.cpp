@@ -30,7 +30,6 @@ vector<int> dijkstrapath(int n , vector<vector<pair<int, int>>> adj  ,int src , 
         parent[i] = i;
     }
 
-
     while(!pq_min.empty()){  // tc : o(n) + o(2m)
         int node = pq_min.top().second  ;
         int dist = pq_min.top().first ;
