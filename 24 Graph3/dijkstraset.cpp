@@ -36,7 +36,7 @@ vector<int> dijkstra(int n , vector<vector<pair<int, int>>> adj  ,int src){
             int weight = neighbor.second;
 
             if (dist + weight < dis[adjNode]) {
-                // romve the larger dist
+                // remove the larger dist
                 if (dis[adjNode] != INT_MAX) {
                     set.erase({dis[adjNode], adjNode});
                 }
