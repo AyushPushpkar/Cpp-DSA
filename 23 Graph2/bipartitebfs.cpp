@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Check if graph is bipartite using BFS coloring.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          3
 *         / \
 *    1---2   4---7---8

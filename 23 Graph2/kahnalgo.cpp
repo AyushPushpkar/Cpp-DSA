@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Topological sort using Kahn's algorithm (BFS with in-degrees).
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             

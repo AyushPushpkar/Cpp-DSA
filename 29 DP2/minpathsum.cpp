@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Minimum path sum in m×n grid (move right or down only).
+*/
 
+// TC: O(rows × cols) | SC: O(rows × cols)
 /*
 Problem:
 You are given a matrix `grid` with non-negative numbers.

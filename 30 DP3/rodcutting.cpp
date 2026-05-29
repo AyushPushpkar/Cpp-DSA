@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Rod cutting - maximize profit cutting rod into pieces with given prices.
+*/
+
+// TC: O(n²) | SC: O(n)
+
 int rodCuttingOptimal(vector<int >&pieces , int  rodlen ) {
 
     int n = pieces.size() ;

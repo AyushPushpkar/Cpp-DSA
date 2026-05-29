@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Longest palindromic subsequence - find longest subsequence that is palindrome.
+*/
 
+// TC: O(n²) | SC: O(n²)
 int lcsubsequenceOptimal(string s1 , string s2){
     int n = s1.size() ;
     int m = s2.size() ;

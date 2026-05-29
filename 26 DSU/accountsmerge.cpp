@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Merge user accounts with common email addresses using DSU.
+*/
 
+// TC: O(nlog n) | SC: O(n)
 class DisjointSet
 {
 private:

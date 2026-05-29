@@ -3,6 +3,13 @@ using namespace std;
 
 /*
 Problem:
+Count partitions with given difference between two subsets.
+*/
+
+// TC: O(n × sum) | SC: O(sum)
+
+/*
+Problem:
 You are given an array `nums` and an target difference `diff`.
 
 Rules:

@@ -3,6 +3,13 @@ using namespace std;
 
 /*
 Problem:
+0/1 Knapsack - maximize value with capacity constraint (each item used 0 or 1 time).
+*/
+
+// TC: O(n × W) | SC: O(n × W) where W = capacity
+
+/*
+Problem:
 You are given a list of `items` (weight, value) and a knapsack capacity `bag_wt`.
 
 Rules:

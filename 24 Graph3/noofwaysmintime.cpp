@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Count number of ways to reach destination with minimum time.
+*/
 
+// TC: O((V + E)log V) | SC: O(V)
 int countPaths(int n, vector<vector<int>> &roads)
 {
     int src = 0, dst = n - 1;

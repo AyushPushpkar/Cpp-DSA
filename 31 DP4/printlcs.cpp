@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Construct and print longest common subsequence (LCS).
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 vector<vector<int>> lcsubsequenceTab(int& n ,int& m , string &s1 , string &s2){
     
     vector<vector<int>> dp(n+1, vector<int>(m+1, -1));

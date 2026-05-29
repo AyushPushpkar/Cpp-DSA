@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Tabulation technique - bottom-up DP approach for Fibonacci sequence.
+*/
 
+// TC: O(n) | SC: O(n)
 // Problem: Fibonacci number using Tabulation approach.
 
 long long fibonacciOptimised(int n)

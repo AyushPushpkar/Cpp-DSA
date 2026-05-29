@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Target sum - count ways to assign +/- to elements to reach target.
+*/
+
+// TC: O(n × sum) | SC: O(sum)
+
 int countPartitionDiff(vector<int>&nums , int diff ,int totsum , int n ) {  
 
     if(totsum -diff <0 || (totsum -diff)%2) return false ; 

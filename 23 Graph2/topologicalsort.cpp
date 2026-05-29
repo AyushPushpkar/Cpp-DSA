@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Topological sort of directed acyclic graph using DFS.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             

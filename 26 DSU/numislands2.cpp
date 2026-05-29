@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Number of islands with online queries (incremental island addition).
+*/
 
+// TC: O(n × α(n)) | SC: O(n)
 // online queries
 // return list : num of islands after each query
 

@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Determine order of characters in alien dictionary using topological sort.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *      b——→a——→c
 *       ↘↗

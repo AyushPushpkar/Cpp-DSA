@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Longest common substring - find longest contiguous substring present in both strings.
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 int lcsubstringOptimal(string s1 , string s2){
     int n = s1.size() ;
     int m = s2.size() ;

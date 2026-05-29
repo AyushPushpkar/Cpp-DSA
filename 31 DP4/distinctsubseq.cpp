@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Distinct subsequences - count number of distinct subsequences.
+*/
 
+// TC: O(n) | SC: O(n)
 int distinctsubseqOptimal(string s, string t){
     int n = s.size() ;
     int m = t.size() ;

@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Word ladder all shortest transformation paths.
+*/
 
+// TC: O(n × l² × k) where k = paths | SC: O(n)
 vector<vector<string>> ladderLength(string beginWord, string endWord, vector<string>& wordList) {
     
     queue<vector<string>> q ;

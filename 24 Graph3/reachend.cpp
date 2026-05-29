@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Minimum multiplications/operations to reach target value.
+*/
 
+// TC: O(nlog n) | SC: O(n)
 //! no negative weight
 //? tc : o(ElogV)
 

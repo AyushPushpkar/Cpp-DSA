@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Word ladder shortest transformation path using BFS.
+*/
 
+// TC: O(n × l²) where n = words, l = length | SC: O(n)
 int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
     
     queue<pair<string, int>> q ;

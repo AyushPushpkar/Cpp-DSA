@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Partition array into two subsets minimizing sum difference.
+*/
 
+// TC: O(n × sum) | SC: O(sum)
 /*
 Problem:
 You are given an array `nums` and you need to partition it into two subsets.

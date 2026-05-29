@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Maximum path sum falling through grid (diagonal/adjacent allowed).
+*/
 
+// TC: O(rows × cols) | SC: O(rows × cols)
 /*
 Problem:
 You are given an n x m `grid` of integers.

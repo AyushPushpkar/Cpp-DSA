@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
-using namespace std ;     
+using namespace std ;
+
+/*
+Problem:
+Find path with minimum effort (max altitude difference minimized).
+*/
+
+// TC: O((V + E)log V) | SC: O(V)     
 
 //shortest dist in a binary  maze
 

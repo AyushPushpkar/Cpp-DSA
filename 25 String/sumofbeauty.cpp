@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Sum of beauty of all substrings.
+*/
 
+// TC: O(n²) | SC: O(1)
 class Solution {
 public:
     int beautySum(string s) {

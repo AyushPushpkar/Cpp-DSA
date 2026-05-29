@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Prim's algorithm for minimum spanning tree (priority queue).
+*/
 
+// TC: O((V + E)log V) | SC: O(V)
 //? greedy
 //* tc : o(ElogE)
 // sum of mst weight

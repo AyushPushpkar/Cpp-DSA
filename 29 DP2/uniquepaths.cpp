@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Unique paths in m×n grid (move right or down only).
+*/
 
+// TC: O(rows × cols) | SC: O(rows × cols)
 /*
 Problem:
 There is a robot on an m x n grid.

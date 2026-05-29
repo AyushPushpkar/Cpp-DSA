@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Maximum stones removable (stones in same row/column can remove each other).
+*/
 
+// TC: O(nlog n) | SC: O(n)
 class DisjointSet
 {
 private:

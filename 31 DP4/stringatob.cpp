@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Minimum steps transforming string A to B (insert, delete, replace operations).
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 //? min deletion/insertion 
 
 int lcsubsequenceOptimal(int &n , int& m , string &s1 , string &s2){

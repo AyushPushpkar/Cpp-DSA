@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find maximum depth of nested parentheses.
+*/
+
+// TC: O(n) | SC: O(1)
+
 class Solution {
 public:
     int maxDepth(string s) {

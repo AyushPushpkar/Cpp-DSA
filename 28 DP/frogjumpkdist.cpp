@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Frog jump with maximum k distance per jump (variable step size).
+*/
 
+// TC: O(n × k) | SC: O(n)
 /*
 Problem:
 You are given an array `heights` where heights[i] represents the height of the i-th stone.

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Minimum coins - find minimum coins needed to make target amount.
+*/
+
+// TC: O(amount × n) | SC: O(amount)
+
 int minCoins( vector<int>&nums , int  target ) {
 
     int n = nums.size() ;

@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Roman numeral to integer conversion.
+*/
 
+// TC: O(n) | SC: O(1)
 class Solution {
 public:
     int romanToInt(string s) {

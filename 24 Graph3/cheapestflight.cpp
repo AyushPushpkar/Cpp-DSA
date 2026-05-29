@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Cheapest flight within K stops using Bellman-Ford variant.
+*/
 
+// TC: O(K × E) | SC: O(V)
 //? Time complexity: O(E * log V)
 
 int findCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst, int k)

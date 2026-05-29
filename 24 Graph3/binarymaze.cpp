@@ -1,5 +1,12 @@
 #include<bits/stdc++.h>
-using namespace std ;     
+using namespace std ;
+
+/*
+Problem:
+Shortest distance in binary maze using multi-source BFS.
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)     
 
 //shortest dist in a binary  maze
 

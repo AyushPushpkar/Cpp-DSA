@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Detect cycle in directed graph using Kahn's algorithm (BFS).
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             

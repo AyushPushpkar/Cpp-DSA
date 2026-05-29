@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Minimum insertions to make string palindrome.
+*/
 
+// TC: O(n²) | SC: O(n²)
 //? min insertions to make string palindrome
 
 int lcsubsequenceOptimal(string s1 , string s2){

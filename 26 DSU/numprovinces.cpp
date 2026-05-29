@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Number of connected provinces using DSU.
+*/
 
+// TC: O(n² × α(n)) | SC: O(n)
 class DisjointSet
 {
 private:

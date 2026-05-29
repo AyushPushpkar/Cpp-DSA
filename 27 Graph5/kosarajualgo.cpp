@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Kosaraju's algorithm for strongly connected components.
+*/
 
+// TC: O(V + E) | SC: O(V)
 //?strongly connected components
 //* tc : o(V+E)
 

@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Find safe states in directed graph using DFS (avoiding infinite loops).
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             

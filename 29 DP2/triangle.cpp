@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Minimum path sum in triangle (can move to adjacent bottom elements).
+*/
 
+// TC: O(n²) | SC: O(n)
 /*
 Problem:
 You are given a `triangle` array representing a triangle of numbers.

@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Subset sum - check if subset with given sum exists.
+*/
 
+// TC: O(n × sum) | SC: O(sum)
 /*
 Problem:
 You are given an array `nums` and a `target` integer.

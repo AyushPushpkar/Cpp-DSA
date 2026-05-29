@@ -1,7 +1,12 @@
 // disjoint_set.cpp
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Disjoint Set Union (DSU) with union by rank optimization.
+*/
 
+// TC: O(α(n)) amortized | SC: O(n)
 /*
     Disjoint Set (Union-Find) Data Structure
     ----------------------------------------

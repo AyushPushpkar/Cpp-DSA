@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Find largest island area using DSU.
+*/
 
+// TC: O(rows × cols × α(n)) | SC: O(rows × cols)
 class DisjointSet
 {
 private:

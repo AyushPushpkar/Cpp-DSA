@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Disjoint Set Union (DSU) with union by size optimization.
+*/
 
+// TC: O(α(n)) amortized | SC: O(n)
 /*
     Disjoint Set (Union-Find) - Union by Size + Path Compression
 */

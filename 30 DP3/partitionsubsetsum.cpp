@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Partition equal subset sum - check if array can be split into two equal sum subsets.
+*/
 
+// TC: O(n × sum) | SC: O(sum)
 /*
 Problem:
 You are given an array `nums`.

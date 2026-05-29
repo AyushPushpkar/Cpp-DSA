@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+House robber 2 - max sum of non-adjacent elements in circular array.
+*/
 
+// TC: O(n) | SC: O(1)
 /*
 Problem:
 You are given an array `money` where money[i] represents the amount of money

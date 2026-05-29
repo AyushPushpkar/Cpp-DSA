@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Course scheduling with prerequisites using topological sort.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *          
 *    1——→2——→3——→4
 *        ↑   ↓   ↓ ↘             

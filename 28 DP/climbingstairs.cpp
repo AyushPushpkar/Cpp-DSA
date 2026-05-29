@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Count number of ways to climb n stairs (can climb 1 or 2 steps per move).
+*/
 
+// TC: O(n) | SC: O(n) [DP array] or O(1) [space optimized]
 /*
 Problem:
 You are climbing a staircase. It takes n steps to reach the top.

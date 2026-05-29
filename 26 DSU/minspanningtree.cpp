@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Find minimum spanning tree weight using DSU (Kruskal's variant).
+*/
 
+// TC: O((V + E)log E) | SC: O(V)
 //? n nodes and n-1 edges and all nodes reachable
 //? edge weight -> min sum
 

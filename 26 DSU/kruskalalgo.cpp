@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Kruskal's algorithm for minimum spanning tree using DSU.
+*/
 
+// TC: O((V + E)log E) | SC: O(V)
 // mst
 
 class DisjointSet

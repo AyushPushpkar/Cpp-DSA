@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Frog jump - find minimum jumps to reach end from stairs (can jump 1 or 2 steps).
+*/
 
+// TC: O(n) | SC: O(n)
 /*
 Problem:
 You are given an array `heights` where heights[i] represents the height of the i-th stone.

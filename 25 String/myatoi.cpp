@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+String to integer conversion (atoi functionality).
+*/
 
+// TC: O(n) | SC: O(1)
 class Solution {
 public:
     int myAtoi(string s) {

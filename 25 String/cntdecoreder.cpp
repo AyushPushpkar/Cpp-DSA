@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Sort string by character frequency (in descending order).
+*/
+
+// TC: O(n + klog k) where k = unique chars | SC: O(k)
+
 string frequencySort(string s) {
 
     unordered_map<char, int> freq;

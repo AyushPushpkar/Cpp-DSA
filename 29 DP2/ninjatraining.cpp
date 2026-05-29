@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Ninja training - max points selecting non-consecutive task types each day.
+*/
 
+// TC: O(n) | SC: O(n)
 /*
 Problem:
 A ninja has to do exactly one activity each day out of a 2D array `matrix`.

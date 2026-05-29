@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Minimum operations to connect all components.
+*/
 
+// TC: O(n × α(n)) | SC: O(n)
 //? min num of operations to connect components
 //! new edges can't be formed , edges can only be moved
 //* we only need n-1 edges to connect n components

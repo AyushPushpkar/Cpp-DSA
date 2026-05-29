@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+House robber - maximum sum of non-adjacent elements in array.
+*/
 
+// TC: O(n) | SC: O(n) or O(1) [space optimized]
 /*
 Problem:
 You are given an array `money` where money[i] represents the amount of money

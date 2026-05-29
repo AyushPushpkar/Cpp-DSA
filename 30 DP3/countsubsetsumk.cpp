@@ -3,6 +3,13 @@ using namespace std;
 
 /*
 Problem:
+Count subsets with sum equal to K.
+*/
+
+// TC: O(n × K) | SC: O(K)
+
+/*
+Problem:
 You are given an array `nums` and a `target` sum.
 
 Rules:

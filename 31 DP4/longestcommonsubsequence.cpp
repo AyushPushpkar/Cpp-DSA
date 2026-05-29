@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Longest common subsequence - find longest subsequence present in both strings.
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 int lcsubsequenceOptimal(string s1 , string s2){
     int n = s1.size() ;
     int m = s2.size() ;

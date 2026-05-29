@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std ;
+/*
+Problem:
+Cherry picking 2 - max sum collecting cherries from top-left to bottom-right and back.
+*/
 
+// TC: O(m × n × m) | SC: O(m × n)
 /*
 Problem: Ninja and His Friends (Chocolate Pickup)
 

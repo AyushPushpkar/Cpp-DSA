@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Coin change 2 - count number of ways to make target amount with coins.
+*/
+
+// TC: O(n × amount) | SC: O(amount)
+
 int coinChange( vector<int>&coins , int  amount ) {
 
     int n = coins.size();

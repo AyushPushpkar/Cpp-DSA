@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Find bridges (critical edges) in graph using DFS.
+*/
 
+// TC: O(V + E) | SC: O(V)
 /*
  *       1
  *      / \

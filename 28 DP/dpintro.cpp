@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Dynamic Programming fundamentals and introduction.
+*/
 
+// TC: O(n) | SC: O(n)
 // Those who cannot remember past are condemned to repeat it.
 //? Dynamic Programming remembers past results to avoid recomputation.
 

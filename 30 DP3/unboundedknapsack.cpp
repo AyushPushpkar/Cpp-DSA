@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Unbounded knapsack - maximize value with capacity constraint (items unlimited).
+*/
+
+// TC: O(n × W) | SC: O(W)
+
 int ubknapsackOptimal(vector<pair<int ,int>>&items , int  bag_wt ) {
 
     int n = items.size() ;

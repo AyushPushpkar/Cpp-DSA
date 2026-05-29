@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Find articulation points (cut vertices) in graph using DFS.
+*/
 
+// TC: O(V + E) | SC: O(V)
 /*
  *       1
  *      / \

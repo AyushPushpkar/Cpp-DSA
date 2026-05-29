@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Shortest common supersequence - shortest string containing both as subsequences.
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 class Solution {
 private:
     vector<vector<int>> lcs(int n, int m, string &s1, string &s2) {

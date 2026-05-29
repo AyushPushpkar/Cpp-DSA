@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Bellman-Ford shortest path (handles negative weights and cycles).
+*/
 
+// TC: O(V × E) | SC: O(V)
 //? tc : o(EV)
 // v - vertices
 // s - src

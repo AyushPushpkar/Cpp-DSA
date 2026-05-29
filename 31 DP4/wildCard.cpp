@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Wildcard pattern matching ('*' matches any sequence, '?' matches any char).
+*/
 
+// TC: O(m × n) | SC: O(m × n)
 bool wildcardMatchingSpaceOpt(string s, string p) {
     int n = s.length();
     int m = p.length();
