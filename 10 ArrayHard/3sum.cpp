@@ -1,11 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//sum of triplet = 0
-//no repeatition
-//no dulplicate triplet
+/*
+Problem:
+Find all unique triplets in an array that sum to zero, with no duplicate triplets in result.
 
-//2 pointer
+Constraints:
+- Elements in triplets must sum to 0
+- No repetition of triplet combinations in result
+*/
+
+// no dulplicate triplet
+// 2 pointer
+
+// TC: O(n²) | SC: O(n) [for storing answer]
 void optimal(int a[] , int n){
     vector<vector<int>>ans ;
     sort(a,a+n) ;        //  o(nlogn)
@@ -52,6 +60,7 @@ void optimal(int a[] , int n){
     
 } 
 
+// TC: O(n²) | SC: O(n) [for storing answer]
 void optimal2(int a[] , int n){
     vector<vector<int>>ans ;
     sort(a,a+n) ;          // o(nlogn)
@@ -88,8 +97,9 @@ void optimal2(int a[] , int n){
         cout << endl;
     }
     
-} 
+}
 
+// TC: O(n²log n) | SC: O(n) [set for storage]
 void better(int a[] , int n){
     set<vector<int>>ans ;    //sc: o(no of triplets)
 
@@ -111,8 +121,9 @@ void better(int a[] , int n){
         }
         cout << endl;
     }
-} 
+}
 
+// TC: O(n³) | SC: O(n) [set for storage]
 void brute(int a[] , int n){
     set<vector<int>>ans ;    //sc: o(no of triplets)
 

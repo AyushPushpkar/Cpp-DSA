@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Check if a string is palindrome using stack.
+*/
+
+// TC: O(n) | SC: O(n)
+
 class StackArr{
 public:
     int top = -1 ;  

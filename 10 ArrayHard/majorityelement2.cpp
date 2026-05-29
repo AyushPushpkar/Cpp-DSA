@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find all elements appearing more than n/3 times in an array.
+*/
+
+// TC: O(n) | SC: O(1) [Boyer-Moore majority voting variant]
 int optimal(int a[] , int n){
     vector<int>v ;             //sc  : o(1)
     int cnt1 = 0 , cnt2 =0;
@@ -36,6 +42,7 @@ int optimal(int a[] , int n){
     cout << endl;
 }
 
+// TC: O(nlog n) | SC: O(n) [hash map]
 int better2(int a[] , int n){
     map<int,int>mp ; // sc o(n)
     vector<int>v ;
@@ -51,6 +58,7 @@ int better2(int a[] , int n){
     cout << endl;
 }
 
+// TC: O(nlog n) | SC: O(n) [hash map]
 int better(int a[] , int n){
     map<int,int>mp ; // sc o(n)
 

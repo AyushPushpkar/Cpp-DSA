@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Morris inorder traversal - inorder traversal with O(1) space.
+*/
+
+// TC: O(n) | SC: O(1)
+
 struct Node {
     int data;
     struct Node* left;

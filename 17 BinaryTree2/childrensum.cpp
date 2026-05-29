@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Check and enforce children sum property (node value = sum of children values).
+*/
+
+// TC: O(n) | SC: O(h)
+
 // lowest common ancestor
 
 struct Node {

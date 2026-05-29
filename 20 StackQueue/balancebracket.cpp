@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Check if parentheses and brackets are balanced in a string using stack.
+*/
+
+// TC: O(n) | SC: O(n)
 bool balancedParanthesis(string s ){  // tc : o(n)   // sc : o(n)
     int len = s.size() ;
     stack<int> st ;

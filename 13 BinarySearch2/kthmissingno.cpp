@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find kth missing number in an array.
+*/
+
+// TC: O(log n) | SC: O(1)
+
 int binary(int a[] ,int n , int k){
     if(k > (a[n-1] - n)) return -1 ;
     int high = n-1  , low = 0 ;

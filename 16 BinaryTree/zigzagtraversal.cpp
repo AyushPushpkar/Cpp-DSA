@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Zigzag level order traversal (left-to-right, then right-to-left, alternating per level).
+*/
+
+// TC: O(n) | SC: O(w) where w is max width
+
 struct Node {
     int data;
     struct Node* left;

@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find longest consecutive elements sequence in unsorted array.
+*/
+
+// TC: O(n) | SC: O(n) [hash set]
 int optimal(int arr[] ,int m){
     if(m==0) return 0;
 

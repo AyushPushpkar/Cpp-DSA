@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Weighted graph implementation with adjacency list.
+*/
+
+// TC: O(V + E) for traversal | SC: O(V + E)
+
 int matrixGraph(int n , int m) {
     int adj[n+1][n+1] ;  // space : o(n^2)
     

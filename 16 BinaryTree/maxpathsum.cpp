@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find maximum path sum in binary tree (path can start/end at any node).
+*/
+
+// TC: O(n) | SC: O(h)
+
 struct Node{
     int val ;
     struct Node* left ;

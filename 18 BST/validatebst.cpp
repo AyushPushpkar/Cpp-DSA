@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Validate if a binary tree is a valid binary search tree.
+*/
+
+// TC: O(n) | SC: O(h)
+
 struct Node {
     int data;
     struct Node* left;

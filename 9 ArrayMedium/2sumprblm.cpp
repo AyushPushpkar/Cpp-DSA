@@ -1,7 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//for  variety 1 
+/*
+Problem:
+Find two elements in array that sum to target value.
+*/
+
+// for variety 1 
+
+// TC: O(nlog n) | SC: O(1) [two pointer after sort]
 string optimal(int a[], int n , int target){
     int left = 0;
     int right = n-1 ;   //sc o(1)

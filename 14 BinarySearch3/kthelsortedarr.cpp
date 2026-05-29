@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find kth element in two sorted arrays.
+*/
+
+// TC: O(log(min(m,n))) | SC: O(1)
+
 double kthEl(int arr1[],int n ,int arr2[] , int m , int k){
     // for arr1 is always smaller
     if(n>m) return kthEl(arr2,m,arr1,n , k) ;

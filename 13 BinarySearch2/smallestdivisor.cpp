@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find smallest divisor such that result of division is below threshold.
+*/
+
+// TC: O(nlog n) | SC: O(1)
+
 //smallest divisor given a threshold
 
 int maxE(int a[] ,int n){

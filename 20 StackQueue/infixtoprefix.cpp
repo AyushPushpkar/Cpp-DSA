@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Convert infix expression to prefix notation using stack.
+*/
+
+// TC: O(n) | SC: O(n)
+
 int priority(char ch){
     if(ch == '^') return 3 ;
     if(ch == '*' || ch == '/') return 2 ;

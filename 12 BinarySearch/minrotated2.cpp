@@ -1,8 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//identify  sorted half
+/*
+Problem:
+Find minimum element in rotated sorted array with duplicates allowed.
+*/
 
+// identify  sorted half
+
+// TC: O(log n) average | O(n) worst case (with duplicates)
 int minRotated(int a[] ,int n){
     int mini = INT_MAX ;
     int low = 0 , high = n-1 ;

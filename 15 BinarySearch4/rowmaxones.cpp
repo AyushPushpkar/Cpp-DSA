@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find row with maximum 1's in a binary matrix.
+*/
+
+// TC: O(rows + cols) | SC: O(1)
+
 //find the row with max 1's
 //if same 1's smallest row
 

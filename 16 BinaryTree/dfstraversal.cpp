@@ -1,7 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//DFS - depth first search
+/*
+Problem:
+Implement DFS traversals (preorder, inorder, postorder) recursively.
+*/
+
+// DFS - depth first search
 
 // Define the structure of the Node
 struct Node {

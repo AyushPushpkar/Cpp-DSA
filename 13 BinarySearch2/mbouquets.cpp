@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find minimum days to make m bouquets from bloomDay array.
+*/
+
+// TC: O(nlog d) where d = max days | SC: O(1)
+
 //min no of days to make m bouquets
 //if not possible -1
 

@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement queue data structure using array (fixed size).
+*/
+
 class QueueArr{
 public:
     int start = -1 ;  

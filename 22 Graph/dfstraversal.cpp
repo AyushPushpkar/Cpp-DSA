@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Depth-first search (DFS) traversal of graph.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *       1
 *      / \
 *     2   3

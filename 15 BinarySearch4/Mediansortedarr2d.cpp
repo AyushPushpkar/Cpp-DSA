@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find median in a row-wise sorted 2D array.
+*/
+
+// TC: O(rowslog colslog(maxVal-minVal)) | SC: O(1)
+
 //row wise sorted arr
 //n,m -> odd
 

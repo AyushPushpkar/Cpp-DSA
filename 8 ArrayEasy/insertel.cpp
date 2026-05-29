@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+/*
+Problem:
+Insert an element at a given position in an array.
+*/
+
+// TC: O(n) | SC: O(1)
 void insertElement(int arr[], int& n, int pos, int value) {
     
     if (pos < 1 || pos > n + 1) {

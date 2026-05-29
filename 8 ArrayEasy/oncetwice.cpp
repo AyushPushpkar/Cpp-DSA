@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find element appearing once where all others appear twice.
+*/
+
+// TC: O(n) | SC: O(1) [XOR]
 int onceoptimal(int a[] ,int n){
 
     int XOR =0 ;

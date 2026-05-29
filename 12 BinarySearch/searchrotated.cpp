@@ -1,8 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//identify  sorted half
+/*
+Problem:
+Search target element in a rotated sorted array by identifying the sorted half.
+*/
 
+// identify  sorted half
+
+// TC: O(log n) | SC: O(1)
 int searchRotated(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
 

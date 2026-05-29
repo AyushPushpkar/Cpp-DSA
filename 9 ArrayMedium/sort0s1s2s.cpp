@@ -1,8 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//dutch national flag algo
-//3 pointer
+/*
+Problem:
+Sort array containing only 0s, 1s, and 2s (Dutch national flag problem).
+*/
+
+// dutch national flag algo
+// 3 pointer
+
+// TC: O(n) | SC: O(1)
 // [0 ... low-1] = 0
 // [low ...mid-1 ] = 1
 //[high+1 ... n-1] =2

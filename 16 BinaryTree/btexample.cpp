@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Demonstrate basic binary tree node structure creation and tree construction.
+*/
+
 struct Node{
     int data ;
     struct Node* left ;

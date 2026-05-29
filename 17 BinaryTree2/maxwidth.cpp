@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find maximum width of binary tree (maximum nodes at any level).
+*/
+
+// TC: O(n) | SC: O(w) where w is max width
+
 // no of nodes in between two nodes in a level
 
 struct Node {

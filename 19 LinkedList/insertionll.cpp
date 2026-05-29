@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Insertion operations in linked list (at start, end, and at specific position).
+*/
+
+// TC: O(n) | SC: O(1)
+
 struct Node {
     int data;
     struct Node* next;

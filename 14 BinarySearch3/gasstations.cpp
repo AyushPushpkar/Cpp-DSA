@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Minimize maximum distance between gas stations by adding pumps.
+*/
+
+// TC: O(nlog n) | SC: O(1)
+
 //minimise max dist to gas stations
 
 int gasStationsReq(int a[] ,int n ,int dist){

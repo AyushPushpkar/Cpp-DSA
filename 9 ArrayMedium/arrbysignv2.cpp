@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Arrange positive and negative elements alternately (flexible approach).
+*/
+
+// TC: O(n) | SC: O(n)
+
 void brute(int a[] ,int n){
     vector<int>pos;       // sc o(n/2)
     vector<int>neg ;      // sc o(n/2)

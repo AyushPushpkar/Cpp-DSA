@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Check if two binary trees are identical (same structure and values).
+*/
+
+// TC: O(min(m, n)) | SC: O(h)
+
 struct Node {
     int val;
     struct Node* left;

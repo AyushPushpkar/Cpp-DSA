@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count number of subarrays with XOR equal to k.
+*/
+
+// TC: O(nlog n) | SC: O(n) [hash map]
 int optimal(int a[],int n,int k){
     map<int,int>mp ;     //sc o(n)
     int XOR =0;

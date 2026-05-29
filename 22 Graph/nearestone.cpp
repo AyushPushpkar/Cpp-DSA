@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find distance to nearest 0 for each 1 in binary grid using multi-source BFS.
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 void bfstraversal( queue<pair<pair<int,int>,int>> &q ,vector<vector<int>> &newgrid , vector<vector<int>> &grid){
 
     int n = grid.size() ;

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Insert a value into BST maintaining BST property.
+*/
+
+// TC: O(h) | SC: O(h)
+
 struct Node {
     int data;
     struct Node* left;

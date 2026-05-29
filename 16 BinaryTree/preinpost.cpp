@@ -2,6 +2,11 @@
 using namespace std;
 
 /*
+Problem:
+Implement pre-order, in-order, and post-order traversals using single stack (iterative).
+*/
+
+/*
 if num == 1 ;
 pre-order
 num++

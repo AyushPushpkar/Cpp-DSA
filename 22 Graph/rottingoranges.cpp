@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Rotting oranges: find minimum time to rot all oranges using multi-source BFS.
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 int bfstraversal( queue<pair<pair<int,int>,int>> &q ,vector<vector<int>> &newgrid , vector<vector<int>> &grid){
 
     int n = grid.size() ;

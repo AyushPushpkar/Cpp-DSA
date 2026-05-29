@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count total nodes in a complete binary tree efficiently.
+*/
+
+// TC: O((log n)²) | SC: O(log n)
+
 //complete binary tree
 struct Node {
     int data;

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find nth root of a number (floor value) using binary search.
+*/
+
+// TC: O(log n) | SC: O(1)
+
 //floor value 
 
 int func(int mid , int n , int target){

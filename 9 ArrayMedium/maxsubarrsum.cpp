@@ -1,7 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//kadane's algo
+/*
+Problem:
+Find maximum sum of contiguous subarray (Kadane's algorithm).
+*/
+
+// kadane's algo
+
+// TC: O(n) | SC: O(1)
 int optimal(int a[] , int n){
     int maxsum = INT_MIN ;        // sc  o(1)
     int sum = 0;

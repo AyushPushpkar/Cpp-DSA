@@ -1,7 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find longest subarray with given sum.
+*/
 
+// TC: O(n) | SC: O(n) [hash map]
 int positiveoptimal(int a[], int n, int s) {
     int left =0 , right = 0 ;
     int maxLen = 0;                  

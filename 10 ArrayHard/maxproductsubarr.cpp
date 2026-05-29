@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find the maximum product of any contiguous subarray.
+*/
+
+// TC: O(n) | SC: O(1)
 int optmal(int a[] , int n){
     int prefix =1 ,suffix =1 ;
     int product = INT_MIN ;

@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Merge two sorted linked lists into one sorted list.
+*/
 
+// TC: O(m + n) | SC: O(1)
 struct Node {
     int data;
     struct Node* next;

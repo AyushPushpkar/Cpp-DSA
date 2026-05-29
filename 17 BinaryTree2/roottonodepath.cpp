@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find path from root to a specific node in binary tree.
+*/
+
+// TC: O(n) | SC: O(h)
+
 struct Node {
     int data;
     struct Node* left;

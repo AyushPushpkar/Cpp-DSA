@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//search space is sorted
+/*
+Problem:
+Perform binary search to find a target element in a sorted array.
+*/
 
+// TC: O(log n) | SC: O(1) [iterative]
 int iterative(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
 

@@ -1,8 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//duplicates allowed
+/*
+Problem:
+Search target in rotated sorted array with duplicates allowed.
+*/
 
+// duplicates allowed
+
+// TC: O(log n) average | O(n) worst case (with duplicates)
 bool searchRotated(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
                                   //tc : worst ~ o(n/2)

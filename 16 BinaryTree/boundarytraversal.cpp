@@ -1,10 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//anti-clockwise
-//left boundary w/o leaf
-//leaf nodes -> preorder
-//right boundary reverse w/o leaf
+/*
+Problem:
+Boundary traversal of binary tree (anti-clockwise: left boundary + leaf nodes + right boundary reversed).
+*/
+
+// anti-clockwise
+// left boundary w/o leaf
+// leaf nodes -> preorder
+// right boundary reverse w/o leaf
+
+// TC: O(n) | SC: O(h)
 
 struct Node {
     int data;

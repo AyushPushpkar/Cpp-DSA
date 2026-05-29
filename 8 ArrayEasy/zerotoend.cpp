@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Move all zeros to the end of array while maintaining relative order of non-zero elements.
+*/
+
+// TC: O(n) | SC: O(1) [two pointer]
 int linearSearch(int a[], int n){
     int q;
     cin >> q;

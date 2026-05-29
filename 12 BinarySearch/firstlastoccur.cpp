@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find first and last occurrence of a target element in a sorted array.
+*/
+
+// TC: O(log n) | SC: O(1) [iterative]
 pair<int,int> iterative(int a[] ,int n,int target){
     int low = 0 , high = n-1 ;
     int first = -1 ,last = -1 ;

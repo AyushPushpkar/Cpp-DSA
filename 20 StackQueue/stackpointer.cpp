@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement stack using dynamic pointers with push/pop/display operations.
+*/
+
+// TC: O(1) per operation | SC: O(n)
+
 class Stack {
 private:
     int* top; // Pointer to the top element

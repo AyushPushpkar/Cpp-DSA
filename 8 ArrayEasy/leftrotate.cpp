@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Rotate array left by k positions.
+*/
+
+// TC: O(n) | SC: O(1)
 void rightRotate(int k , int a[] , int n){
 
     reverse(a,a+n-k);     

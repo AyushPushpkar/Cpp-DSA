@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Delete nodes from linked list whose values are in a given array.
+*/
 
+// TC: O(n + m) | SC: O(m) [hash set]
 /* Definition for singly-linked list. */
 struct ListNode
 {

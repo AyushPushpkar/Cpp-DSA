@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Serialize and deserialize binary tree to/from string format.
+*/
+
+// TC: O(n) for both operations | SC: O(n)
+
 struct Node {
     int data;
     struct Node* left;

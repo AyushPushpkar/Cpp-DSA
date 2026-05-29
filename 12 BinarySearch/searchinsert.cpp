@@ -1,9 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//if present return index
-//if not present where should be inserted
+/*
+Problem:
+Search for target in sorted array; if found return index, else return insertion position.
+*/
 
+// TC: O(log n) | SC: O(1)
 int lbound(int a[] ,int n ,int target){
     int ans = n ;   //tc  :  o(log2(n))
 

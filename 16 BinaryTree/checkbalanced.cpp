@@ -1,7 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//height(left) - height(right) <= 1
+/*
+Problem:
+Check if a binary tree is balanced (height difference between left and right subtrees <= 1 for all nodes).
+*/
+
+// height(left) - height(right) <= 1
+
+// TC: O(n) | SC: O(h) where h is height
 
 struct Node {
     int val;

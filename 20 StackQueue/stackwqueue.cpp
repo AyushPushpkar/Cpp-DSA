@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement stack using two queues.
+*/
+
+// TC: O(n) for push | O(1) for pop | SC: O(n)
+
 class QueStack {
 public:
     queue<int> q;

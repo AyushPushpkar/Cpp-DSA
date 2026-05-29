@@ -1,9 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//floor = largest no in arr <= x
-//ceil = smallest no. in arr >= x
+/*
+Problem:
+Find floor (largest element <= target) and ceil (smallest element >= target) in sorted array.
+*/
 
+// floor = largest no in arr <= x
+// ceil = smallest no. in arr >= x
+
+// TC: O(log n) | SC: O(1)
 int floor(int a[] ,int n ,int target){
     int ans = -1 ;   //tc  :  o(log2(n))
 

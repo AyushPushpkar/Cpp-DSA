@@ -1,10 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//sum of 4 el = 0
-//no repeatition
-//no dulplicate 
+/*
+Problem:
+Find all unique quadruplets in an array that sum to zero, with no duplicate quadruplets in result.
 
+Constraints:
+- Elements in quadruplets must sum to 0
+- No repetition of quadruplet combinations in result
+*/
+
+// sum of 4 el = 0
+// no repeatition
+// no dulplicate 
+
+// TC: O(n³) | SC: O(n) [for storing answer]
 void optimal(int a[] , int n){
     vector<vector<int>>ans ;
     sort(a,a+n) ;
@@ -50,6 +60,7 @@ void optimal(int a[] , int n){
     
 } 
 
+// TC: O(n³log n) | SC: O(n) [set for storage]
 void better(int a[] , int n){
     set<vector<int>>ans ;    //sc: o(no of quadruplets)
 
@@ -75,6 +86,7 @@ void better(int a[] , int n){
     }
 } 
 
+// TC: O(n⁴) | SC: O(n) [set for storage]
 void brute(int a[] , int n){
     set<vector<int>>ans ;    //sc: o(no of quadruplets)
 

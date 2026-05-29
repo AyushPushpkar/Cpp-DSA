@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count number of distinct islands by normalizing island coordinates.
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 void dfstraversal(int row , int col ,vector<vector<int>> &grid ,vector<vector<int>> &vis ,
     vector<pair<int,int>> &island ,int basex , int basey){
 

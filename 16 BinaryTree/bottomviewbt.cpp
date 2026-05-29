@@ -1,6 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Print bottom view of binary tree (nodes visible from bottom when viewing tree from below).
+*/
+
+// TC: O(n) | SC: O(n)
+
 struct Node {
     int data;
     struct Node* left;

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Flood fill algorithm (paint connected region with new color).
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 void dfstraversal(int row , int col ,vector<vector<int>> &grid , vector<vector<int>> &newgrid ,
     int newcolor , int inicolor , int delrow[] , int delcol[] ){
 

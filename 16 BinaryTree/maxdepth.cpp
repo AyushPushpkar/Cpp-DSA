@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Find the maximum depth (height) of a binary tree.
+*/
+
 struct Node {
     int val;
     struct Node* left;

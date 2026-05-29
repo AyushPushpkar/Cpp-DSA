@@ -1,7 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//Moore's voting algo
+/*
+Problem:
+Find element appearing more than n/2 times (majority element).
+*/
+
+// Moore's voting algo
+
+// TC: O(n) | SC: O(1)
 int optimal(int a[] , int n){
     int cnt = 0;
     int el ;

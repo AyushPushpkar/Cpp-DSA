@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Delete a node from BST maintaining BST property.
+*/
+
+// TC: O(h) | SC: O(h)
+
 struct Node {
     int val;
     struct Node* left;

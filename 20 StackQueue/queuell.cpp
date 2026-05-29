@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement queue data structure using linked list (dynamic size).
+*/
+
+// TC: O(1) per operation | SC: O(n)
+
 struct Node {
     int data;
     struct Node* next;

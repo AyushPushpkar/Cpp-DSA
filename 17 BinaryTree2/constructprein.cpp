@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Construct binary tree from inorder and preorder traversals.
+*/
 
+// TC: O(n) | SC: O(n) [hash map + recursion]
 // Definition for a binary tree node.
 struct Node {
     int data;

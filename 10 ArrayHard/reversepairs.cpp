@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-// i<j && a[i] > 2*a[j]
+/*
+Problem:
+Count reverse pairs where i < j but a[i] > 2*a[j] using merge sort.
+*/
 
+// TC: O(nlog n) | SC: O(n) [merge sort]
 void merge(int a[],int low ,int mid , int high){
     vector<int>v; //temp container
     int left =low;

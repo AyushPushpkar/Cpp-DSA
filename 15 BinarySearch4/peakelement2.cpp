@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find peak element in 2D matrix (greater than all 4 adjacent cells).
+*/
+
+// TC: O(rows*log cols) | SC: O(1)
+
 int maxEl(vector<vector<int>> &v ,int n ,int mid){
     int index = 0 ;
     int max = v[0][mid] ;

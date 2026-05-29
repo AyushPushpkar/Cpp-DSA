@@ -1,9 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find single element where all others appear exactly twice using binary search parity trick.
+*/
+
 // (even, odd ) - el in right half
 // (odd , even ) - el in left half
 
+// TC: O(log n) | SC: O(1)
 int binary(int a[] ,int n){
     if(n==1) return a[0] ;
     if(a[0] != a[1]) return a[0] ;

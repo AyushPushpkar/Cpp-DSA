@@ -1,9 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//left -> right
-//smaller first if overlapping
-//can have same values
+/*
+Problem:
+Vertical order traversal of binary tree (nodes grouped by vertical distance from root).
+*/
+
+// left -> right
+// smaller first if overlapping
+// can have same values
+
+// TC: O(nlog n) | SC: O(n)
 
 struct Node {
     int data;

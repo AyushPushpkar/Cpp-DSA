@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Evaluate prefix and postfix expressions.
+*/
+
+// TC: O(n) | SC: O(n)
 
 bool isOperator(char ch) {
     return ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^';

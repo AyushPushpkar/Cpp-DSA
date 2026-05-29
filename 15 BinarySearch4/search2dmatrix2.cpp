@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Search target in 2D matrix where each row and column is individually sorted.
+*/
+
+// TC: O(m + n) | SC: O(1)
+
 // individual row and col sorted
 
 int iterative(vector<int> &a ,int n,int target){

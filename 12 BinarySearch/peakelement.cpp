@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find peak element greater than both its neighbors using binary search.
+*/
+
+// TC: O(log n) | SC: O(1)
 int multiPeak(int a[] ,int n){
     if(n== 1) return a[0] ;
     if(a[0] > a[1]) return a[0] ;

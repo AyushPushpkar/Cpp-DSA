@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find kth smallest element in BST.
+*/
+
+// TC: O(h + k) | SC: O(h)
+
 struct Node {
     int data;
     struct Node* left;

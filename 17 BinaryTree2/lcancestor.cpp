@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find lowest common ancestor (LCA) of two nodes in binary tree.
+*/
+
+// TC: O(n) | SC: O(h)
+
 // lowest common ancestor
 
 struct Node {

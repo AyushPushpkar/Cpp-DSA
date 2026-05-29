@@ -1,7 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//repeatition allowed
+/*
+Problem:
+Find union and intersection of two sorted arrays.
+*/
+
+// repetition allowed
+
+// TC: O(n + m) | SC: O(n + m)
 void optimalInter(int a[],int n, int arr[],int m){
     vector<int>interarr ;
     int i=0 , j=0 ;           // sc o(1)

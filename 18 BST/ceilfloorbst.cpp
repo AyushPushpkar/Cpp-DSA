@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find ceil (smallest >= target) and floor (largest <= target) in BST.
+*/
+
+// TC: O(h) | SC: O(1)
+
 struct Node {
     int data;
     struct Node* left;

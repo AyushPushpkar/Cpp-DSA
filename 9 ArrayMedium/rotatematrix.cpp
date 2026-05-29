@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Rotate matrix 90 degrees clockwise in-place.
+*/
+
+// TC: O(n²) | SC: O(1) [in-place]
+
 void optimal2(vector<vector<int>>& v,int n){
     //               sc : o(1)
 

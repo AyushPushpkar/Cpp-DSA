@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find the length of the longest subarray with sum equal to zero.
+*/
+
+// TC: O(n) | SC: O(n) [hash map]
 int better(int a[] , int n){
     int maxlen = INT_MIN ;
     int sum = 0 ;
@@ -21,6 +27,7 @@ int better(int a[] , int n){
     }
     return maxlen ;
 }
+     
 
 int brute(int a[] , int n){
     int maxlen = INT_MIN ;

@@ -1,8 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//longer prefix match
-//greater but closest
+/*
+Problem:
+Find next lexicographically greater permutation.
+*/
+
+// longer prefix match
+// greater but closest
+
+// TC: O(n) | SC: O(1)
 //rest in sorted order
 string optimal(string str , int n){
     int index = -1;

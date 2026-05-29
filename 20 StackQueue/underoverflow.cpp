@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Handle stack overflow and underflow conditions with error checking.
+*/
+
+// TC: O(1) per operation | SC: O(n)
+
 class Stack {
 private:
     int maxSize;

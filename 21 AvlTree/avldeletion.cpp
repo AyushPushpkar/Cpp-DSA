@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+AVL Tree deletion with automatic rebalancing to maintain balance factor.
+*/
 
+// TC: O(log n) | SC: O(log n)
 #include <bits/stdc++.h>
 using namespace std;
 

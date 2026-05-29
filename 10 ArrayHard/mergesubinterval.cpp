@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//merge overlapping subinterval
+/*
+Problem:
+Merge overlapping subintervals in an array of intervals.
+*/
 
+// TC: O(nlog n) | SC: O(n)
 void optimal(vector<vector<int>> &a , int n){
     sort(a.begin() ,a.end());    //  o(nlogn)
     vector<vector<int>> ans ;    // sc : o(n)

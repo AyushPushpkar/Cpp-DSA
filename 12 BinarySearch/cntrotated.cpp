@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-// cnt = index of min 
+/*
+Problem:
+Find number of rotations in a rotated sorted array (index of minimum element).
+*/
 
+// TC: O(log n) | SC: O(1)
 int cntRotated(int a[] ,int n){
     int mini = INT_MAX ;
     int low = 0 , high = n-1 ;

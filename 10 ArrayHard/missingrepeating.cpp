@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find the missing and repeating numbers in an array containing numbers 1 to n.
+*/
+
+// TC: O(n) | SC: O(1) [XOR method]
 void optimal2(int a[] ,int n){ 
     int xr = 0 ;        // tc o(n)
 

@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count the number of inversions in an array (pairs where i < j but a[i] > a[j]).
+*/
+
+// TC: O(nlog n) | SC: O(n) [merge sort]
 int merge(int a[],int low ,int mid , int high){
     vector<int>v; //temp container           //sc o (n)
     int left =low;

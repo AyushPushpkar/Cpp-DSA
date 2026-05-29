@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find missing number in array of 1 to n.
+*/
+
+// TC: O(n) | SC: O(1) [XOR or math]
 void missingnumberoptimal2(int a[] ,int n){
 
     int XOR = 0 ,XOR2 = 0 ;         

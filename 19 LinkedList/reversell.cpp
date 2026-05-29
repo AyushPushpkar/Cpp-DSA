@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Reverse a linked list.
+*/
+
+// TC: O(n) | SC: O(1) [iterative] or O(n) [recursive]
+
 struct Node {
     int data;
     struct Node* next;

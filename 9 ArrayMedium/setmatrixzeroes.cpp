@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Set entire row and column to zero if element is zero.
+*/
+
+// TC: O(rows × cols) | SC: O(1) [in-place mark]
+
 void optimal(vector<vector<int>>& v,int n,int m){
     // int col[m]={0};     v[0][...]  row0
     // int row[n]={0};     v[...][0]  col0

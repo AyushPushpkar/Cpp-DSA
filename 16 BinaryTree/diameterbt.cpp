@@ -1,8 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//longest distance between 2 nodes
-//not necessary to pass through root
+/*
+Problem:
+Find diameter of binary tree (longest path between any 2 nodes, not necessarily through root).
+*/
+
+// longest distance between 2 nodes
+// not necessary to pass through root
+
+// TC: O(n) | SC: O(h)
 
 struct Node{
     int val ;

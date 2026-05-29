@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count enclaves (regions of 0s surrounded by 1s).
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 void dfstraversal(int row , int col ,vector<vector<int>> &grid ,vector<vector<int>> &vis ){
 
     int n = grid.size() ;

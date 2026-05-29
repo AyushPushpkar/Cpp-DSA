@@ -1,10 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//without extra space
+/*
+Problem:
+Merge two sorted arrays without using extra space (in-place gap method).
+*/
 
-//shell sort ;
-//gap method ;
+// without extra space
+// shell sort ;
+// gap method ;
+
 void swapifGreater(int a[] ,int arr[] ,int ind1 ,int ind2){
     if(a[ind1] > arr[ind2]){
         swap(a[ind1],arr[ind2]) ;

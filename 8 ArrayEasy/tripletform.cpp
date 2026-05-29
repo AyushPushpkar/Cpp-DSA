@@ -2,6 +2,13 @@
 #include <vector>
 using namespace std;
 
+/*
+Problem:
+Convert sparse matrix to triplet form (row, col, value).
+*/
+
+// TC: O(rows × cols) | SC: O(non-zero elements)
+
 int main() {
     // Define the sparse matrix (4 x 5)
     int sparseMatrix[4][5] = {

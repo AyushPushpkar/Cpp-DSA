@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find maximum number of consecutive 1s in a binary array.
+*/
+
+// TC: O(n) | SC: O(1)
 int ones( int a[] , int n){
     int maxi = 0 ;
     int cnt =  0 ;

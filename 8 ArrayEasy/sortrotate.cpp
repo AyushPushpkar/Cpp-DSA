@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Check if array is sorted rotation of another array.
+*/
+
+// TC: O(n) | SC: O(1)
 class Solution {
 public:
     bool check(vector<int>& nums) {   

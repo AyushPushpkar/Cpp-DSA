@@ -1,7 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Remove duplicates from a sorted array and return new length.
+*/
 
+// TC: O(n) | SC: O(1) [two pointer]
 void optimal (int a[],int n){
 
     sort(a,a+n);

@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Create/build binary tree from user input interactively.
+*/
 
+// TC: O(n) | SC: O(h)
 struct Node {
     int data;
     Node *lchild;

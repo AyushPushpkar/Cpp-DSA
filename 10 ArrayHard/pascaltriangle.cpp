@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Generate rows of Pascal's triangle efficiently.
+*/
+
+// TC: O(n) | SC: O(1)
 void betterrow(int row ){
     int res = 1;
     cout << res << " " ;            //sc : o(1)

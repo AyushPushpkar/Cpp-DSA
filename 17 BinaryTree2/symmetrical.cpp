@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Check if binary tree is symmetric (mirror image).
+*/
+
+// TC: O(n) | SC: O(h)
+
 struct Node {
     int data;
     struct Node* left;

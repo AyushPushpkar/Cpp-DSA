@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find minimum time to burn entire binary tree starting from a target node.
+*/
+
+// TC: O(n) | SC: O(h)
+
 //min time to burn bt from a node
 struct Node {
     int data;

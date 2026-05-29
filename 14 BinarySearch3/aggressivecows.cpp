@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Maximize minimum distance between cows when placed on stalls.
+*/
+
+// TC: O(nlog n) | SC: O(1)
+
 // (min dis b/w cows) is max
 bool canWePlace(int a[] ,int n ,int cows ,int dist){
     int cntcows = 1 ,last = a[0] ;

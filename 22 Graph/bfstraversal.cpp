@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Breadth-first search (BFS) traversal of graph.
+*/
+
+// TC: O(V + E) | SC: O(V)
+
+/*
 *       1
 *      / \
 *     2   3

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Allocate books to students minimizing maximum pages assigned to any student.
+*/
+
+// TC: O(nlog n) | SC: O(1)
+
 //each student at least one book
 //each book to only one student
 //allocation in contiguous manner 

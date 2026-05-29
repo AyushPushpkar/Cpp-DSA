@@ -1,7 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//DFS - iterative
+/*
+Problem:
+DFS traversals (preorder, inorder, postorder) using iterative approach with stack.
+*/
+
+// TC: O(n) | SC: O(h)
 
 struct Node {
     int data;

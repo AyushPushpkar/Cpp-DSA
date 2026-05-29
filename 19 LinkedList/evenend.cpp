@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
+/*
+Problem:
+Move all even-positioned nodes to the end of linked list.
+*/
 
+// TC: O(n) | SC: O(1)
 struct Node {
     int data;
     struct Node* next;

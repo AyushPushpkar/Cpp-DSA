@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find least ship capacity to ship all packages within D days.
+*/
+
+// TC: O(nlog n) | SC: O(1)
+
 //least capacity to ship packages in D days
 
 int maxE(int a[] ,int n){

@@ -1,9 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-//lower bound : smallest index a[index] >= x 
-//upper bound : smallest index a[index] > x 
+/*
+Problem:
+Find lower bound (smallest index where element >= target) and upper bound (smallest index where element > target).
+*/
 
+// lower bound : smallest index a[index] >= x 
+// upper bound : smallest index a[index] > x 
+
+// TC: O(log n) | SC: O(1)
 int ubound(int a[] ,int n ,int target){
     int ans = n ;   //tc  :  o(log2(n))
 

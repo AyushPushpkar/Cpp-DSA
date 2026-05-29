@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find maximum profit from single buy-sell transaction.
+*/
+
+// TC: O(n) | SC: O(1)
 int stocks(int a[] , int n){
     int mini = a[0] ;
     int profit = 0;

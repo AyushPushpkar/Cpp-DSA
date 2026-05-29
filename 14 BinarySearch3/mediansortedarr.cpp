@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find median of two sorted arrays.
+*/
+
+// TC: O(log(min(m,n))) | SC: O(1)
+
 double optimal(int arr1[],int n ,int arr2[] , int m){
     // for arr1 is always smaller
     if(n>m) return optimal(arr2,m,arr1,n) ;

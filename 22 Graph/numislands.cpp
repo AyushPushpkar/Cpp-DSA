@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count number of islands in a grid (connected components of 1s).
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols)
+
 void bfstraversal( int row , int col ,vector<vector<int>> &vis , vector<vector<int>> &grid){
 
     int n = grid.size() ;

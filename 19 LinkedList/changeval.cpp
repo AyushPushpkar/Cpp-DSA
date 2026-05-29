@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Update/change value at a specific position in linked list.
+*/
+
+// TC: O(n) | SC: O(1)
+
 struct Node {
     int data;
     struct Node* next;

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find lowest common ancestor of two nodes in BST.
+*/
+
+// TC: O(h) | SC: O(1)
+
 // lowest common ancestor
 
 struct Node {

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Basic graph implementation and representation (adjacency matrix and list).
+*/
+
+// TC: O(V²) for matrix | SC: O(V + E) for list
+
 int matrixGraph(int n , int m) {
     int adj[n+1][n+1] ;  // space : o(n^2)
     

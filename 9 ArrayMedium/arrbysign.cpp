@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Arrange positive and negative elements alternately in array.
+*/
+
+// TC: O(n) | SC: O(n)
 void arrangeoptimal(int a[] ,int n){
     vector<int>ans(n,0);       // sc o(n)
     int posindex = 0 , negindex = 1 ;

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Painter's partition - minimize largest sum when partitioning array.
+*/
+
+// TC: O(nlog sum) | SC: O(1)
+
 // painter"s partition / split arr - largest sum
 //each painter at least one job
 //consecutive

@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-// Binary search Tree -> left < node < right
-// everything on right must be greater
+/*
+Problem:
+Search for a value in binary search tree.
+*/
+
+// TC: O(h) | SC: O(1) iterative
 // everything on left should be smaller 
 
 struct Node {

@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Count number of subarrays with sum equal to given target.
+*/
+
+// TC: O(n) | SC: O(n) [hash map]
 int optimal(int a[],int n,int s){
     map<int,int>mp ;     //sc o(n)
     int sum =0;

@@ -1,7 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std ;
-//everything on right is smaller
 
+/*
+Problem:
+Find all leaders (elements greater than all elements on right).
+*/
+
+// everything on right is smaller
+
+// TC: O(n) | SC: O(k) where k = number of leaders
 void optimal(int a[] , int n){
     vector<int>v ;      // o(n)    to return
     int maxi = INT_MIN ;

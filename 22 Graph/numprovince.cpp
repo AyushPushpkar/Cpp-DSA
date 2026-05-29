@@ -2,6 +2,13 @@
 using namespace std ;
 
 /*
+Problem:
+Find number of provinces (connected components) in city connectivity graph.
+*/
+
+// TC: O(V²) | SC: O(V)
+
+/*
 *       1
 *      / \
 *     2   3

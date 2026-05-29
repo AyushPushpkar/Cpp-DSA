@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Traverse matrix in spiral order (clockwise from outside).
+*/
+
+// TC: O(rows × cols) | SC: O(rows × cols) [for answer]
+
 void optimal(vector<vector<int>>& v,int n,int m){
     vector<int> ans;
     int top =0 , bottom = n-1 ;

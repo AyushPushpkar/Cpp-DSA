@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find inorder successor of a given node in BST.
+*/
+
+// TC: O(h) | SC: O(1)
+
 struct Node {
     int data;
     struct Node* left;

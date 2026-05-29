@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find square root of a number (floor value) using binary search.
+*/
+
+// TC: O(log n) | SC: O(1)
+
 //floor value 
 
 int binary(int n){

@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Find minimum eating speed for Koko to eat all bananas within h hours.
+*/
+
+// TC: O(nlog m) where m = max bananas per pile | SC: O(1)
+
 // min integer k (bananas /hr she eats)
 //such that koko eats all within h hours
 

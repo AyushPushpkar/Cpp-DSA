@@ -1,6 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement queue using two stacks.
+*/
+
+// TC: O(1) amortized per operation | SC: O(n)
+
 class QueStack {
 public:
     stack<int> s1 , s2;  // sc : o(2s)

@@ -1,7 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//BFS - breadth first search
+/*
+Problem:
+Implement level-order traversal (BFS) using queue.
+*/
+
+// BFS - breadth first search
+
+// TC: O(n) | SC: O(w) where w is max width
 
 struct Node {
     int data;

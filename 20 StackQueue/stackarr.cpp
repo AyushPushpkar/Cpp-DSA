@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+/*
+Problem:
+Implement stack data structure using array (fixed size).
+*/
+
 class StackArr{
 public:
     int top = -1 ;  

@@ -1,6 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*
+Problem:
+Find the largest and second largest (distinct) elements in an array.
+*/
+
+// TC: O(n) | SC: O(1)
 void ssmallest(int a[] , int n){
     int small =a[0] , ssmall = INT_MAX;
     for(int i=0;i <n ;i++){    //o(n)

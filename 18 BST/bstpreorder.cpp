@@ -1,7 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
-// construct bst from a preorder traversal
+/*
+Problem:
+Construct BST from preorder traversal sequence.
+*/
+
+// TC: O(n) | SC: O(h)
 
 struct Node {
     int data;
